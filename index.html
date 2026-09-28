@@ -1,0 +1,7428 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="theme-color"
+    content="#102F4F"
+  >
+
+  <title>
+    คู่มือการขอกำหนดตำแหน่งทางวิชาการ
+  </title>
+
+
+  <!-- =========================================================
+       FONT FALLBACK
+       TH Sarabun New = ใช้จากเครื่องผู้ใช้หากมีติดตั้ง
+       Sarabun = fallback จาก Google Fonts
+  ========================================================== -->
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+
+  <style>
+
+    /* =========================================================
+       ROOT
+    ========================================================== */
+
+    :root {
+
+      --navy: #102F4F;
+      --navy2: #18496F;
+      --blue: #2F709F;
+      --blue-soft: #EAF3F9;
+
+      --gold: #D5A83E;
+      --gold-soft: #FFF4D8;
+
+      --green: #2C735E;
+      --green-soft: #E6F4EF;
+
+      --orange: #A9691A;
+      --orange-soft: #FFF1DE;
+
+      --red: #A94747;
+      --red-soft: #FDECEC;
+
+      --bg: #F5F7FA;
+      --white: #FFFFFF;
+
+      --text: #172330;
+      --muted: #687580;
+
+      --line: #DDE5EC;
+
+      --shadow:
+        0 18px 55px
+        rgba(16, 47, 79, .10);
+
+      --shadow-soft:
+        0 10px 28px
+        rgba(16, 47, 79, .07);
+
+      --radius-xl: 28px;
+      --radius-lg: 22px;
+      --radius-md: 15px;
+
+    }
+
+
+    /* =========================================================
+       FONT
+    ========================================================== */
+
+    @font-face {
+
+      font-family:
+        "TH Sarabun New";
+
+      src:
+        local("TH Sarabun New"),
+        local("THSarabunNew");
+
+      font-style: normal;
+
+      font-display: swap;
+
+    }
+
+
+    * {
+
+      box-sizing: border-box;
+
+    }
+
+
+    html {
+
+      scroll-behavior: smooth;
+
+    }
+
+
+    body {
+
+      margin: 0;
+
+      font-family:
+        "TH Sarabun New",
+        "Sarabun",
+        Tahoma,
+        sans-serif;
+
+      font-size: 22px;
+
+      line-height: 1.45;
+
+      color: var(--text);
+
+      background:
+
+        radial-gradient(
+          circle at 90% 8%,
+          rgba(47, 112, 159, .08),
+          transparent 23%
+        ),
+
+        radial-gradient(
+          circle at 5% 20%,
+          rgba(213, 168, 62, .07),
+          transparent 21%
+        ),
+
+        var(--bg);
+
+    }
+
+
+    a {
+
+      color: inherit;
+
+      text-decoration: none;
+
+    }
+
+
+    button,
+    input,
+    select,
+    textarea {
+
+      font-family:
+        "TH Sarabun New",
+        "Sarabun",
+        sans-serif;
+
+    }
+
+
+    button {
+
+      font-size: inherit;
+
+    }
+
+
+    /* =========================================================
+       SCROLL PROGRESS
+    ========================================================== */
+
+    .progress-track {
+
+      position: fixed;
+
+      top: 0;
+      left: 0;
+      right: 0;
+
+      height: 4px;
+
+      z-index: 9999;
+
+      background:
+        rgba(255, 255, 255, .35);
+
+    }
+
+
+    .progress-fill {
+
+      width: 0;
+
+      height: 100%;
+
+      background:
+        linear-gradient(
+          90deg,
+          var(--gold),
+          #F1C866
+        );
+
+      transition:
+        width .1s linear;
+
+    }
+
+
+    /* =========================================================
+       TOPBAR
+    ========================================================== */
+
+    .topbar {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+      background:
+        rgba(255, 255, 255, .92);
+
+      backdrop-filter:
+        blur(16px);
+
+      border-bottom:
+        1px solid
+        rgba(16, 47, 79, .08);
+
+    }
+
+
+    .topbar-inner {
+
+      width:
+        min(
+          1180px,
+          calc(100% - 30px)
+        );
+
+      min-height: 74px;
+
+      margin: auto;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content:
+        space-between;
+
+      gap: 20px;
+
+    }
+
+
+    .brand {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      min-width: 0;
+
+    }
+
+
+    .brand-mark {
+
+      width: 46px;
+      height: 46px;
+
+      flex: 0 0 auto;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 14px;
+
+      background:
+        linear-gradient(
+          145deg,
+          var(--navy),
+          var(--blue)
+        );
+
+      color: white;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      box-shadow:
+        0 8px 22px
+        rgba(16, 47, 79, .18);
+
+    }
+
+
+    .brand-text {
+
+      min-width: 0;
+
+    }
+
+
+    .brand-text strong {
+
+      display: block;
+
+      color: var(--navy);
+
+      font-size: 24px;
+
+      line-height: 1;
+
+    }
+
+
+    .brand-text small {
+
+      display: block;
+
+      margin-top: 3px;
+
+      color: var(--muted);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 10px;
+
+      white-space: nowrap;
+
+      overflow: hidden;
+
+      text-overflow: ellipsis;
+
+    }
+
+
+    .top-menu {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 5px;
+
+    }
+
+
+    .top-menu a {
+
+      padding:
+        8px 12px;
+
+      border-radius:
+        999px;
+
+      color: var(--navy);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 11px;
+
+      font-weight: 600;
+
+    }
+
+
+    .top-menu a:hover {
+
+      background:
+        var(--blue-soft);
+
+    }
+
+
+    .top-menu .primary {
+
+      color: white;
+
+      background:
+        var(--navy);
+
+    }
+
+
+    /* =========================================================
+       HERO / BRAND BANNER
+    ========================================================== */
+
+    .hero {
+
+      min-height: 84vh;
+
+      position: relative;
+
+      overflow: hidden;
+
+      display: grid;
+
+      place-items: center;
+
+      padding:
+        80px 20px
+        65px;
+
+      color: white;
+
+      background:
+
+        linear-gradient(
+          120deg,
+          #081F35 0%,
+          #102F4F 54%,
+          #28698F 100%
+        );
+
+    }
+
+
+    .hero::before {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      background-image:
+
+        linear-gradient(
+          rgba(255, 255, 255, .035) 1px,
+          transparent 1px
+        ),
+
+        linear-gradient(
+          90deg,
+          rgba(255, 255, 255, .035) 1px,
+          transparent 1px
+        );
+
+      background-size:
+        54px 54px;
+
+    }
+
+
+    .hero::after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 520px;
+      height: 520px;
+
+      right: -190px;
+      top: -180px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid
+        rgba(255, 255, 255, .10);
+
+      box-shadow:
+
+        0 0 0 55px
+        rgba(255, 255, 255, .02),
+
+        0 0 0 115px
+        rgba(255, 255, 255, .015);
+
+    }
+
+
+    .hero-inner {
+
+      position: relative;
+
+      z-index: 2;
+
+      width:
+        min(
+          1180px,
+          100%
+        );
+
+      display: grid;
+
+      grid-template-columns:
+        minmax(0, 1.25fr)
+        minmax(300px, .75fr);
+
+      gap: 50px;
+
+      align-items: center;
+
+    }
+
+
+    .label-row {
+
+      display: flex;
+
+      gap: 8px;
+
+      flex-wrap: wrap;
+
+    }
+
+
+    .label {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      padding:
+        6px 10px;
+
+      border-radius:
+        999px;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 9px;
+
+      font-weight: 700;
+
+      letter-spacing: .06em;
+
+    }
+
+
+    .label-white {
+
+      color: white;
+
+      background:
+        rgba(255, 255, 255, .10);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, .16);
+
+    }
+
+
+    .label-blue {
+
+      color: var(--navy);
+
+      background:
+        var(--blue-soft);
+
+    }
+
+
+    .label-gold {
+
+      color: #75550C;
+
+      background:
+        var(--gold-soft);
+
+    }
+
+
+    .label-green {
+
+      color: var(--green);
+
+      background:
+        var(--green-soft);
+
+    }
+
+
+    .label-orange {
+
+      color: var(--orange);
+
+      background:
+        var(--orange-soft);
+
+    }
+
+
+    .label-red {
+
+      color: var(--red);
+
+      background:
+        var(--red-soft);
+
+    }
+
+
+    .hero h1 {
+
+      margin:
+        20px 0 0;
+
+      font-size:
+        clamp(
+          60px,
+          6vw,
+          94px
+        );
+
+      line-height: .98;
+
+      letter-spacing:
+        -.025em;
+
+      font-weight: 700;
+
+    }
+
+
+    .hero h1 span {
+
+      color:
+        #F2CC6D;
+
+    }
+
+
+    .hero-lead {
+
+      max-width: 760px;
+
+      margin:
+        26px 0 0;
+
+      color:
+        #D8E5EE;
+
+      font-size: 30px;
+
+      line-height: 1.25;
+
+    }
+
+
+    .hero-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 11px;
+
+      margin-top: 32px;
+
+    }
+
+
+    .btn {
+
+      border: 0;
+
+      border-radius:
+        14px;
+
+      padding:
+        11px 18px;
+
+      cursor: pointer;
+
+      font-size: 23px;
+
+      font-weight: 700;
+
+      transition:
+        transform .2s,
+        box-shadow .2s;
+
+    }
+
+
+    .btn:hover {
+
+      transform:
+        translateY(-2px);
+
+    }
+
+
+    .btn-main {
+
+      color:
+        #172330;
+
+      background:
+        var(--gold);
+
+      box-shadow:
+        0 10px 30px
+        rgba(213, 168, 62, .20);
+
+    }
+
+
+    .btn-outline {
+
+      color:
+        white;
+
+      background:
+        rgba(255, 255, 255, .08);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, .18);
+
+    }
+
+
+    .hero-meta {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 7px 15px;
+
+      margin-top: 20px;
+
+      color:
+        #BFD0DD;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 10px;
+
+    }
+
+
+    /* hero journey */
+
+    .journey {
+
+      padding: 22px;
+
+      border-radius:
+        26px;
+
+      background:
+        rgba(255, 255, 255, .075);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, .13);
+
+      backdrop-filter:
+        blur(12px);
+
+      box-shadow:
+        0 30px 80px
+        rgba(0, 0, 0, .18);
+
+    }
+
+
+    .journey-title {
+
+      color:
+        #F0D27E;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 9px;
+
+      font-weight: 700;
+
+      letter-spacing: .08em;
+
+    }
+
+
+    .journey-step {
+
+      display: grid;
+
+      grid-template-columns:
+        40px
+        1fr
+        auto;
+
+      gap: 11px;
+
+      align-items: center;
+
+      margin-top: 10px;
+
+      padding:
+        10px 12px;
+
+      border-radius:
+        15px;
+
+      background:
+        rgba(255, 255, 255, .065);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, .08);
+
+    }
+
+
+    .journey-number {
+
+      width: 40px;
+      height: 40px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius:
+        12px;
+
+      color:
+        var(--navy);
+
+      background:
+        white;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 11px;
+
+      font-weight: 700;
+
+    }
+
+
+    .journey-step strong {
+
+      display: block;
+
+      font-size: 21px;
+
+      line-height: 1;
+
+    }
+
+
+    .journey-step small {
+
+      display: block;
+
+      margin-top: 3px;
+
+      color:
+        #BDD0DD;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 9.5px;
+
+    }
+
+
+    .arrow {
+
+      color:
+        #F2CC6D;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-weight: 700;
+
+    }
+
+
+    /* =========================================================
+       SECTIONS
+    ========================================================== */
+
+    .section {
+
+      width:
+        min(
+          1180px,
+          calc(100% - 30px)
+        );
+
+      margin: auto;
+
+      padding:
+        82px 0;
+
+      scroll-margin-top:
+        82px;
+
+    }
+
+
+    .section-header {
+
+      display: flex;
+
+      justify-content:
+        space-between;
+
+      align-items:
+        flex-end;
+
+      gap: 28px;
+
+      margin-bottom:
+        30px;
+
+    }
+
+
+    .section-kicker {
+
+      color:
+        var(--gold);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+      letter-spacing: .10em;
+
+    }
+
+
+    .section-header h2 {
+
+      margin:
+        7px 0 0;
+
+      color:
+        var(--navy);
+
+      font-size:
+        clamp(
+          48px,
+          4.5vw,
+          68px
+        );
+
+      line-height: 1;
+
+      font-weight: 700;
+
+    }
+
+
+    .section-header p {
+
+      max-width: 780px;
+
+      margin:
+        13px 0 0;
+
+      color:
+        var(--muted);
+
+      font-size: 24px;
+
+      line-height: 1.35;
+
+    }
+
+
+    .section-note {
+
+      max-width: 280px;
+
+      color:
+        var(--muted);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 10px;
+
+      text-align: right;
+
+    }
+
+
+    /* =========================================================
+       POSITION CARDS
+    ========================================================== */
+
+    .position-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 17px;
+
+    }
+
+
+    .position-card {
+
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 24px;
+
+      border-radius:
+        24px;
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--line);
+
+      box-shadow:
+        var(--shadow-soft);
+
+      transition:
+        .22s;
+
+    }
+
+
+    .position-card:hover {
+
+      transform:
+        translateY(-4px);
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .position-code {
+
+      color:
+        var(--blue);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 9px;
+
+      font-weight: 700;
+
+      letter-spacing: .08em;
+
+    }
+
+
+    .position-card h3 {
+
+      margin:
+        15px 0 7px;
+
+      color:
+        var(--navy);
+
+      font-size: 34px;
+
+      line-height: 1;
+
+    }
+
+
+    .position-card p {
+
+      min-height: 72px;
+
+      margin: 0;
+
+      color:
+        var(--muted);
+
+      font-size: 20px;
+
+      line-height: 1.25;
+
+    }
+
+
+    .tags {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 6px;
+
+      margin-top: 16px;
+
+    }
+
+
+    .card-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 19px;
+
+    }
+
+
+    .small-btn {
+
+      border: 0;
+
+      border-radius:
+        11px;
+
+      padding:
+        7px 12px;
+
+      cursor: pointer;
+
+      color:
+        var(--navy);
+
+      background:
+        var(--blue-soft);
+
+      font-size: 20px;
+
+      font-weight: 700;
+
+    }
+
+
+    .small-btn.primary {
+
+      color:
+        white;
+
+      background:
+        var(--navy);
+
+    }
+
+
+    /* =========================================================
+       7 CONTENT MODULES
+    ========================================================== */
+
+    .module-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 14px;
+
+    }
+
+
+    .module-card {
+
+      min-height: 235px;
+
+      position: relative;
+
+      overflow: hidden;
+
+      padding: 20px;
+
+      cursor: pointer;
+
+      border-radius:
+        22px;
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--line);
+
+      box-shadow:
+        var(--shadow-soft);
+
+      transition:
+        .22s;
+
+    }
+
+
+    .module-card:hover {
+
+      transform:
+        translateY(-4px);
+
+      border-color:
+        #B9CFDC;
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .module-wide {
+
+      grid-column:
+        span 2;
+
+      background:
+
+        linear-gradient(
+          140deg,
+          #FFFFFF,
+          #EDF5FA
+        );
+
+    }
+
+
+    .module-number {
+
+      color:
+        #DAE6EE;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 37px;
+
+      font-weight: 700;
+
+    }
+
+
+    .module-card h3 {
+
+      margin:
+        4px 0 8px;
+
+      color:
+        var(--navy);
+
+      font-size: 27px;
+
+      line-height: 1.05;
+
+    }
+
+
+    .module-card p {
+
+      margin: 0;
+
+      color:
+        var(--muted);
+
+      font-size: 19px;
+
+      line-height: 1.25;
+
+    }
+
+
+    .module-open {
+
+      position: absolute;
+
+      right: 17px;
+      bottom: 15px;
+
+      color:
+        var(--blue);
+
+      font-size: 18px;
+
+      font-weight: 700;
+
+    }
+
+
+    /* =========================================================
+       RESOURCE CENTER
+    ========================================================== */
+
+    .resource-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 14px;
+
+    }
+
+
+    .resource-card {
+
+      display: grid;
+
+      grid-template-columns:
+        48px
+        1fr;
+
+      gap: 13px;
+
+      align-items:
+        flex-start;
+
+      padding: 18px;
+
+      border-radius:
+        20px;
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--line);
+
+      box-shadow:
+        var(--shadow-soft);
+
+      transition:
+        .2s;
+
+    }
+
+
+    .resource-card:hover {
+
+      transform:
+        translateY(-3px);
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .resource-icon {
+
+      width: 48px;
+      height: 48px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius:
+        14px;
+
+      color:
+        var(--navy);
+
+      background:
+        var(--blue-soft);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 13px;
+
+      font-weight: 700;
+
+    }
+
+
+    .resource-card strong {
+
+      display: block;
+
+      color:
+        var(--navy);
+
+      font-size: 24px;
+
+      line-height: 1.05;
+
+    }
+
+
+    .resource-card small {
+
+      display: block;
+
+      margin-top: 4px;
+
+      color:
+        var(--muted);
+
+      font-size: 18px;
+
+      line-height: 1.2;
+
+    }
+
+
+    .resource-link {
+
+      display: inline-block;
+
+      margin-top: 9px;
+
+      color:
+        var(--blue);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+    }
+
+
+    /* =========================================================
+       ASSESSMENT
+    ========================================================== */
+
+    .assessment-shell {
+
+      overflow: hidden;
+
+      border-radius:
+        28px;
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--line);
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .assessment-top {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr
+        auto;
+
+      gap: 18px;
+
+      align-items: center;
+
+      padding:
+        24px 27px;
+
+      color:
+        white;
+
+      background:
+
+        linear-gradient(
+          135deg,
+          var(--navy),
+          #1D597F
+        );
+
+    }
+
+
+    .assessment-top h3 {
+
+      margin: 0;
+
+      font-size: 39px;
+
+      line-height: 1;
+
+    }
+
+
+    .assessment-top p {
+
+      margin:
+        7px 0 0;
+
+      color:
+        #D8E5EE;
+
+      font-size: 20px;
+
+    }
+
+
+    .assessment-step {
+
+      padding:
+        6px 12px;
+
+      white-space:
+        nowrap;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(255, 255, 255, .10);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, .15);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 10px;
+
+      font-weight: 700;
+
+    }
+
+
+    .assessment-body {
+
+      padding:
+        26px 28px;
+
+    }
+
+
+    .assessment-intro {
+
+      max-width: 800px;
+
+      margin:
+        0 0 20px;
+
+      color:
+        var(--muted);
+
+      font-size: 20px;
+
+    }
+
+
+    /* choose position */
+
+    .position-select {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 12px;
+
+    }
+
+
+    .position-choice {
+
+      padding:
+        19px;
+
+      cursor: pointer;
+
+      text-align: left;
+
+      border-radius:
+        18px;
+
+      color:
+        var(--text);
+
+      background:
+        #F8FAFC;
+
+      border:
+        1px solid
+        var(--line);
+
+      transition:
+        .18s;
+
+    }
+
+
+    .position-choice:hover,
+    .position-choice.selected {
+
+      background:
+        var(--blue-soft);
+
+      border-color:
+        #7EAAC6;
+
+    }
+
+
+    .position-choice strong {
+
+      display: block;
+
+      color:
+        var(--navy);
+
+      font-size: 30px;
+
+      line-height: 1;
+
+    }
+
+
+    .position-choice span {
+
+      display: block;
+
+      margin-top: 5px;
+
+      color:
+        var(--muted);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 11px;
+
+    }
+
+
+    /* questions */
+
+    .question {
+
+      margin-bottom:
+        13px;
+
+      padding:
+        17px;
+
+      border-radius:
+        18px;
+
+      background:
+        #FBFCFD;
+
+      border:
+        1px solid
+        var(--line);
+
+    }
+
+
+    .question-head {
+
+      display: flex;
+
+      justify-content:
+        space-between;
+
+      gap: 15px;
+
+      align-items:
+        flex-start;
+
+    }
+
+
+    .question-head strong {
+
+      color:
+        var(--navy);
+
+      font-size: 25px;
+
+      font-weight: 700;
+
+      line-height: 1.2;
+
+    }
+
+
+    .critical {
+
+      flex: 0 0 auto;
+
+      padding:
+        4px 7px;
+
+      border-radius:
+        999px;
+
+      color:
+        #78560D;
+
+      background:
+        var(--gold-soft);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 8px;
+
+      font-style: normal;
+
+      font-weight: 700;
+
+    }
+
+
+    .answers {
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 8px;
+
+      margin-top: 14px;
+
+    }
+
+
+    .answer {
+
+      padding:
+        8px 10px;
+
+      cursor: pointer;
+
+      border-radius:
+        12px;
+
+      color:
+        var(--text);
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--line);
+
+      font-size: 20px;
+
+      transition:
+        .15s;
+
+    }
+
+
+    .answer:hover {
+
+      background:
+        #F2F6F9;
+
+    }
+
+
+    .answer.selected.yes {
+
+      color:
+        var(--green);
+
+      background:
+        var(--green-soft);
+
+      border-color:
+        #98C9B8;
+
+    }
+
+
+    .answer.selected.unsure {
+
+      color:
+        var(--orange);
+
+      background:
+        var(--orange-soft);
+
+      border-color:
+        #EAC68F;
+
+    }
+
+
+    .answer.selected.no {
+
+      color:
+        var(--red);
+
+      background:
+        var(--red-soft);
+
+      border-color:
+        #E5B0B0;
+
+    }
+
+
+    .assessment-actions {
+
+      display: flex;
+
+      justify-content:
+        space-between;
+
+      gap: 10px;
+
+      flex-wrap: wrap;
+
+      margin-top: 22px;
+
+    }
+
+
+    .assessment-btn {
+
+      border: 0;
+
+      border-radius:
+        13px;
+
+      padding:
+        8px 16px;
+
+      cursor: pointer;
+
+      font-size: 21px;
+
+      font-weight: 700;
+
+    }
+
+
+    .assessment-btn.next {
+
+      color:
+        white;
+
+      background:
+        var(--navy);
+
+    }
+
+
+    .assessment-btn.back {
+
+      color:
+        var(--navy);
+
+      background:
+        #EDF2F6;
+
+    }
+
+
+    .assessment-btn.reset {
+
+      color:
+        var(--red);
+
+      background:
+        var(--red-soft);
+
+    }
+
+
+    /* result */
+
+    .result-section {
+
+      display: none;
+
+    }
+
+
+    .result-section.show {
+
+      display: block;
+
+    }
+
+
+    .result-hero {
+
+      display: grid;
+
+      grid-template-columns:
+        auto
+        1fr;
+
+      gap: 21px;
+
+      align-items: center;
+
+      padding: 21px;
+
+      border-radius:
+        21px;
+
+      background:
+        #F7FAFC;
+
+      border:
+        1px solid
+        var(--line);
+
+    }
+
+
+    .score-ring {
+
+      --scoredeg:
+        0deg;
+
+      position: relative;
+
+      width: 120px;
+      height: 120px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius:
+        50%;
+
+      background:
+
+        conic-gradient(
+          var(--blue) 0deg,
+          var(--blue) var(--scoredeg),
+          #E5EDF2 var(--scoredeg)
+        );
+
+    }
+
+
+    .score-ring::after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 91px;
+      height: 91px;
+
+      border-radius:
+        50%;
+
+      background:
+        white;
+
+    }
+
+
+    .score-ring strong {
+
+      position: relative;
+
+      z-index: 2;
+
+      color:
+        var(--navy);
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 22px;
+
+    }
+
+
+    .result-hero h4 {
+
+      margin:
+        8px 0 0;
+
+      color:
+        var(--navy);
+
+      font-size: 37px;
+
+      line-height: 1;
+
+    }
+
+
+    .result-hero p {
+
+      margin:
+        8px 0 0;
+
+      color:
+        var(--muted);
+
+      font-size: 20px;
+
+      line-height: 1.3;
+
+    }
+
+
+    .result-grid {
+
+      display: grid;
+
+      grid-template-columns:
+        1fr 1fr;
+
+      gap: 14px;
+
+      margin-top: 16px;
+
+    }
+
+
+    .result-box {
+
+      padding: 18px;
+
+      border-radius:
+        18px;
+
+      background:
+        white;
+
+      border:
+        1px solid
+        var(--line);
+
+    }
+
+
+    .result-box h5 {
+
+      margin: 0;
+
+      color:
+        var(--navy);
+
+      font-size: 28px;
+
+      line-height: 1;
+
+    }
+
+
+    .result-list {
+
+      display: grid;
+
+      gap: 8px;
+
+      margin-top: 12px;
+
+    }
+
+
+    .result-item {
+
+      padding:
+        9px 11px;
+
+      border-radius:
+        12px;
+
+      background:
+        #F7F9FB;
+
+      font-size: 18px;
+
+    }
+
+
+    .result-resource-title {
+
+      margin-top: 16px;
+
+      color:
+        var(--navy);
+
+      font-size: 23px;
+
+      font-weight: 700;
+
+    }
+
+
+    .result-links {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 7px;
+
+      margin-top: 8px;
+
+    }
+
+
+    .result-links a {
+
+      padding:
+        7px 11px;
+
+      border-radius:
+        11px;
+
+      color:
+        var(--navy);
+
+      background:
+        var(--blue-soft);
+
+      font-size: 18px;
+
+      font-weight: 700;
+
+    }
+
+
+    .disclaimer {
+
+      margin-top: 15px;
+
+      padding:
+        13px 15px;
+
+      border-radius:
+        15px;
+
+      color:
+        #6F5518;
+
+      background:
+        var(--gold-soft);
+
+      border:
+        1px solid
+        #EBD194;
+
+      font-size: 18px;
+
+      line-height: 1.3;
+
+    }
+
+
+    /* =========================================================
+       OFFICIAL REFERENCE CTA
+    ========================================================== */
+
+    .reference-box {
+
+      display: grid;
+
+      grid-template-columns:
+        1.15fr
+        .85fr;
+
+      gap: 20px;
+
+      padding: 28px;
+
+      border-radius:
+        26px;
+
+      color: white;
+
+      background:
+        var(--navy);
+
+      box-shadow:
+        var(--shadow);
+
+    }
+
+
+    .reference-box h3 {
+
+      margin:
+        14px 0 0;
+
+      font-size: 34px;
+
+      line-height: 1;
+
+    }
+
+
+    .reference-box p {
+
+      color:
+        #C7D7E2;
+
+      font-size: 20px;
+
+      line-height: 1.3;
+
+    }
+
+
+    .reference-links {
+
+      display: grid;
+
+      gap: 9px;
+
+    }
+
+
+    .reference-link {
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content:
+        space-between;
+
+      gap: 12px;
+
+      padding:
+        10px 13px;
+
+      border-radius:
+        13px;
+
+      color: white;
+
+      background:
+        rgba(255, 255, 255, .06);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, .12);
+
+      font-size: 18px;
+
+    }
+
+
+    .reference-link span {
+
+      color:
+        #F0D17A;
+
+      font-weight: 700;
+
+    }
+
+
+    /* =========================================================
+       FOOTER
+    ========================================================== */
+
+    /* =========================================================
+   FOOTER
+========================================================== */
+
+footer {
+
+  margin-top: 30px;
+
+  color: #FFFFFF;
+
+  background: #133E88;
+
+}
+
+
+.footer-inner {
+
+  width:
+    min(
+      1180px,
+      calc(100% - 30px)
+    );
+
+  margin: auto;
+
+  padding:
+    28px 0
+    88px;
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items:
+    flex-start;
+
+  gap: 30px;
+
+}
+
+
+.footer-info {
+
+  flex: 1;
+
+}
+
+
+.footer-info > strong {
+
+  display: block;
+
+  margin-bottom: 16px;
+
+  color: #FFFFFF;
+
+  font-size: 27px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+}
+
+
+.footer-contact-title {
+
+  margin-bottom: 5px;
+
+  color: #FFFFFF;
+
+  font-size: 24px;
+
+  line-height: 1;
+
+  font-weight: 700;
+
+}
+
+
+.footer-contact-row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  align-items: center;
+
+  gap: 12px 24px;
+
+}
+
+
+.footer-contact-item {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #FFFFFF;
+
+  font-family:
+    "TH Sarabun New",
+    "Sarabun",
+    sans-serif;
+
+  font-size: 25px;
+
+  line-height: 1;
+
+  transition:
+    opacity .2s;
+
+}
+
+
+.footer-contact-item:hover {
+
+  opacity: .82;
+
+}
+
+
+.contact-icon {
+
+  width: 32px;
+  height: 32px;
+
+  display: inline-grid;
+
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  border: 2px solid #FFFFFF;
+
+  border-radius: 50%;
+
+  color: #FFFFFF;
+
+  font-family:
+    "Sarabun",
+    sans-serif;
+
+  font-size: 17px;
+
+  line-height: 1;
+
+}
+
+
+.footer-tag {
+
+  margin-top: 4px;
+
+  white-space: nowrap;
+
+  color: #D9E8FF;
+
+  font-family:
+    "Sarabun",
+    sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+}
+
+
+/* Mobile */
+
+@media(max-width: 700px) {
+
+  .footer-inner {
+
+    flex-direction: column;
+
+    gap: 18px;
+
+  }
+
+
+  .footer-info > strong {
+
+    font-size: 25px;
+
+  }
+
+
+  .footer-contact-row {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+  }
+
+
+  .footer-contact-item {
+
+    font-size: 23px;
+
+  }
+
+
+  .footer-tag {
+
+    white-space: normal;
+
+  }
+
+}
+
+    /* =========================================================
+       BOTTOM NAV
+    ========================================================== */
+
+    .bottom-nav {
+
+      position: fixed;
+
+      z-index: 900;
+
+      left: 50%;
+      bottom: 18px;
+
+      transform:
+        translateX(-50%);
+
+      display: flex;
+
+      gap: 5px;
+
+      padding: 6px;
+
+      border-radius:
+        999px;
+
+      background:
+        rgba(255, 255, 255, .92);
+
+      backdrop-filter:
+        blur(12px);
+
+      border:
+        1px solid
+        rgba(16, 47, 79, .10);
+
+      box-shadow:
+        0 14px 40px
+        rgba(16, 47, 79, .16);
+
+    }
+
+
+    .bottom-nav button {
+
+      padding:
+        8px 10px;
+
+      border: 0;
+
+      cursor: pointer;
+
+      border-radius:
+        999px;
+
+      color:
+        var(--muted);
+
+      background:
+        none;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 9px;
+
+      font-weight: 700;
+
+    }
+
+
+    .bottom-nav button.active,
+    .bottom-nav button:hover {
+
+      color:
+        white;
+
+      background:
+        var(--navy);
+
+    }
+
+
+    /* =========================================================
+       MODAL
+    ========================================================== */
+
+    .modal {
+
+      position: fixed;
+
+      inset: 0;
+
+      z-index: 5000;
+
+      display: none;
+
+      place-items: center;
+
+      padding: 20px;
+
+      background:
+        rgba(6, 22, 38, .60);
+
+      backdrop-filter:
+        blur(8px);
+
+    }
+
+
+    .modal.show {
+
+      display: grid;
+
+    }
+
+
+    .modal-card {
+
+      width:
+        min(
+          700px,
+          100%
+        );
+
+      max-height:
+        84vh;
+
+      overflow: auto;
+
+      padding: 26px;
+
+      border-radius:
+        25px;
+
+      background:
+        white;
+
+      box-shadow:
+        0 35px 100px
+        rgba(0, 0, 0, .25);
+
+    }
+
+
+    .modal-top {
+
+      display: flex;
+
+      justify-content:
+        space-between;
+
+      gap: 20px;
+
+    }
+
+
+    .modal-top h3 {
+
+      margin:
+        8px 0 0;
+
+      color:
+        var(--navy);
+
+      font-size: 35px;
+
+      line-height: 1;
+
+    }
+
+
+    .modal-close {
+
+      width: 38px;
+      height: 38px;
+
+      border: 0;
+
+      cursor: pointer;
+
+      border-radius: 50%;
+
+      color:
+        var(--navy);
+
+      background:
+        #EEF2F5;
+
+      font-family:
+        "Sarabun",
+        sans-serif;
+
+      font-size: 18px;
+
+    }
+
+
+    .modal-body {
+
+      margin-top: 18px;
+
+      color:
+        var(--muted);
+
+      font-size: 20px;
+
+    }
+
+
+    .modal-list {
+
+      display: grid;
+
+      gap: 8px;
+
+      margin-top: 14px;
+
+    }
+
+
+    .modal-list div {
+
+      padding:
+        10px 12px;
+
+      border-radius:
+        12px;
+
+      background:
+        #F7F9FB;
+
+      border:
+        1px solid
+        #E5EBEF;
+
+    }
+
+
+    .modal-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 15px;
+
+    }
+
+
+    .modal-actions a {
+
+      padding:
+        7px 11px;
+
+      border-radius:
+        11px;
+
+      color:
+        var(--navy);
+
+      background:
+        var(--blue-soft);
+
+      font-size: 18px;
+
+      font-weight: 700;
+
+    }
+
+
+    .modal-source {
+
+      margin-top: 17px;
+
+      padding-top: 13px;
+
+      color:
+        #7B8790;
+
+      border-top:
+        1px solid
+        var(--line);
+
+      font-size: 17px;
+
+    }
+
+
+    /* =========================================================
+       REVEAL
+    ========================================================== */
+
+    .reveal {
+
+      opacity: 0;
+
+      transform:
+        translateY(18px);
+
+      transition:
+        opacity .55s,
+        transform .55s;
+
+    }
+
+
+    .reveal.visible {
+
+      opacity: 1;
+
+      transform: none;
+
+    }
+
+
+    /* =========================================================
+       PRINT RESULT
+    ========================================================== */
+
+    @media print {
+
+      body * {
+
+        visibility:
+          hidden !important;
+
+      }
+
+
+      #assessment,
+      #assessment * {
+
+        visibility:
+          visible !important;
+
+      }
+
+
+      #assessment {
+
+        position: absolute;
+
+        left: 0;
+        top: 0;
+
+        width: 100%;
+
+        padding: 0;
+
+      }
+
+
+      .assessment-actions,
+      .topbar,
+      .bottom-nav,
+      .progress-track,
+      .section-header {
+
+        display:
+          none !important;
+
+      }
+
+
+      .assessment-shell {
+
+        border: 0;
+
+        box-shadow:
+          none;
+
+      }
+
+
+      .assessment-top {
+
+        color: black;
+
+        background:
+          white;
+
+        border-bottom:
+          1px solid #999;
+
+      }
+
+
+      .assessment-top p {
+
+        color:
+          #444;
+
+      }
+
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+    ========================================================== */
+
+    @media(max-width: 950px) {
+
+      .top-menu a:not(.primary) {
+
+        display: none;
+
+      }
+
+
+      .hero {
+
+        min-height: auto;
+
+      }
+
+
+      .hero-inner {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .position-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .module-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .resource-grid {
+
+        grid-template-columns:
+          repeat(2, 1fr);
+
+      }
+
+
+      .reference-box {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .section-header {
+
+        flex-direction:
+          column;
+
+        align-items:
+          flex-start;
+
+      }
+
+
+      .section-note {
+
+        text-align: left;
+
+      }
+
+    }
+
+
+    @media(max-width: 700px) {
+
+      .brand-text strong {
+
+        font-size:
+          20px;
+
+      }
+
+
+      .brand-text small {
+
+        max-width:
+          180px;
+
+      }
+
+
+      .hero h1 {
+
+        font-size:
+          52px;
+
+      }
+
+
+      .hero-lead {
+
+        font-size:
+          25px;
+
+      }
+
+
+      .section {
+
+        padding:
+          62px 0;
+
+      }
+
+
+      .module-grid,
+      .resource-grid,
+      .position-select,
+      .answers,
+      .result-grid {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .module-wide {
+
+        grid-column:
+          auto;
+
+      }
+
+
+      .assessment-top {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .result-hero {
+
+        grid-template-columns:
+          1fr;
+
+      }
+
+
+      .score-ring {
+
+        margin:
+          auto;
+
+      }
+
+
+      .bottom-nav {
+
+        width:
+          calc(100% - 18px);
+
+        overflow-x:
+          auto;
+
+        justify-content:
+          flex-start;
+
+      }
+
+
+      .footer-inner {
+
+        flex-direction:
+          column;
+
+      }
+
+    }
+
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =======================================================
+       SCROLL PROGRESS
+  ======================================================== -->
+
+  <div class="progress-track">
+
+    <div
+      class="progress-fill"
+      id="progressFill">
+    </div>
+
+  </div>
+
+
+
+  <!-- =======================================================
+       TOPBAR
+  ======================================================== -->
+
+  <header class="topbar">
+
+    <div class="topbar-inner">
+
+
+      <a
+        class="brand"
+        href="#home">
+
+        <div class="brand-mark">
+          LA
+        </div>
+
+
+        <div class="brand-text">
+
+          <strong>
+            คู่มือการขอกำหนดตำแหน่งทางวิชาการ
+          </strong>
+
+          <small>
+            Faculty of Liberal Arts · RMUTT
+          </small>
+
+        </div>
+
+      </a>
+
+
+      <nav class="top-menu">
+
+        <a href="#positions">
+          เลือกตำแหน่ง
+        </a>
+
+        <a href="#knowledge">
+          7 เรื่องที่ต้องรู้
+        </a>
+
+        <a href="#resources">
+          เอกสาร
+        </a>
+
+        <a
+          href="#assessment"
+          class="primary">
+
+          ประเมินความพร้อม
+
+        </a>
+
+      </nav>
+
+
+    </div>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- =====================================================
+         HERO
+    ====================================================== -->
+
+    <section
+      class="hero"
+      id="home">
+
+
+      <div class="hero-inner">
+
+
+        <div>
+
+
+          <div class="label-row">
+
+            <span class="label label-white">
+              FACULTY OF LIBERAL ARTS
+            </span>
+
+            <span class="label label-white">
+              RMUTT
+            </span>
+
+            <span class="label label-white">
+              ACADEMIC PROMOTION GUIDE
+            </span>
+
+          </div>
+
+
+
+          <h1>
+
+            เตรียมพร้อมก่อนยื่น
+
+            <br>
+
+            <span>
+              ก้าวสู่ตำแหน่งทางวิชาการ
+            </span>
+
+          </h1>
+
+
+
+          <p class="hero-lead">
+
+            ประเมินความพร้อม เข้าใจหลักเกณฑ์
+            จัดเตรียมผลงาน ตรวจเอกสาร
+            และเข้าถึงแบบฟอร์มสำคัญ
+            จาก Web App เดียว
+
+          </p>
+
+
+
+          <div class="hero-actions">
+
+            <button
+              class="btn btn-main"
+              onclick="goTo('assessment')">
+
+              ✓ เริ่มประเมินความพร้อมของฉัน
+
+            </button>
+
+
+            <button
+              class="btn btn-outline"
+              onclick="goTo('knowledge')">
+
+              ดู 7 เรื่องที่ต้องรู้ ↓
+
+            </button>
+
+          </div>
+
+
+
+                  </div>
+
+
+
+        <aside class="journey">
+
+
+          <div class="journey-title">
+
+            YOUR ACADEMIC PROMOTION JOURNEY
+
+          </div>
+
+
+
+          <div class="journey-step">
+
+            <div class="journey-number">
+              01
+            </div>
+
+            <div>
+
+              <strong>
+                ตรวจคุณสมบัติ
+              </strong>
+
+              <small>
+                วุฒิ ระยะเวลา และสถานะปัจจุบัน
+              </small>
+
+            </div>
+
+            <div class="arrow">
+              →
+            </div>
+
+          </div>
+
+
+
+          <div class="journey-step">
+
+            <div class="journey-number">
+              02
+            </div>
+
+            <div>
+
+              <strong>
+                เตรียมผลการสอน
+              </strong>
+
+              <small>
+                หลักเกณฑ์และเอกสารคำสอน
+              </small>
+
+            </div>
+
+            <div class="arrow">
+              →
+            </div>
+
+          </div>
+
+
+
+          <div class="journey-step">
+
+            <div class="journey-number">
+              03
+            </div>
+
+            <div>
+
+              <strong>
+                วางแผนผลงาน
+              </strong>
+
+              <small>
+                ประเภท คุณภาพ และการเผยแพร่
+              </small>
+
+            </div>
+
+            <div class="arrow">
+              →
+            </div>
+
+          </div>
+
+
+
+          <div class="journey-step">
+
+            <div class="journey-number">
+              04
+            </div>
+
+            <div>
+
+              <strong>
+                ตรวจเอกสารก่อนยื่น
+              </strong>
+
+              <small>
+                แบบฟอร์ม Checklist และหลักฐาน
+              </small>
+
+            </div>
+
+            <div class="arrow">
+              ✓
+            </div>
+
+          </div>
+
+
+        </aside>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         POSITION
+    ====================================================== -->
+
+    <section
+      class="section reveal"
+      id="positions">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-kicker">
+            01 · CHOOSE YOUR PATH
+          </div>
+
+          <h2>
+            ฉันกำลังจะขอตำแหน่งใด?
+          </h2>
+
+          <p>
+
+            เลือกระดับตำแหน่งที่ต้องการ
+            แล้วเริ่มประเมินความพร้อม
+            ได้จากหน้านี้ทันที
+
+          </p>
+
+        </div>
+
+
+        <div class="section-note">
+
+          การประเมินเป็นการคัดกรองความพร้อม
+          เพื่อช่วยวางแผนก่อนยื่นจริง
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="position-grid">
+
+
+        <article class="position-card">
+
+
+          <div class="position-code">
+            PATH 01 · ASSISTANT PROFESSOR
+          </div>
+
+
+          <h3>
+            ผู้ช่วยศาสตราจารย์
+          </h3>
+
+
+          <p>
+
+            ตรวจคุณสมบัติเบื้องต้น
+            ผลการสอน ผลงานทางวิชาการ
+            การเผยแพร่ และเอกสารประกอบ
+
+          </p>
+
+
+          <div class="tags">
+
+            <span class="label label-blue">
+              คุณสมบัติ
+            </span>
+
+            <span class="label label-blue">
+              ผลการสอน
+            </span>
+
+            <span class="label label-blue">
+              ผลงาน
+            </span>
+
+          </div>
+
+
+          <div class="card-actions">
+
+            <button
+              class="small-btn primary"
+              onclick="startAssessment('assistant')">
+
+              ประเมินความพร้อม
+
+            </button>
+
+            <button
+              class="small-btn"
+              onclick="goTo('knowledge')">
+
+              ดูข้อมูลก่อน
+
+            </button>
+
+          </div>
+
+
+        </article>
+
+
+
+        <article class="position-card">
+
+
+          <div class="position-code">
+            PATH 02 · ASSOCIATE PROFESSOR
+          </div>
+
+
+          <h3>
+            รองศาสตราจารย์
+          </h3>
+
+
+          <p>
+
+            ทบทวนเงื่อนไขการยื่น
+            เกณฑ์ผลงาน ระดับคุณภาพ
+            การเผยแพร่ และหลักฐานประกอบ
+
+          </p>
+
+
+          <div class="tags">
+
+            <span class="label label-blue">
+              เงื่อนไข
+            </span>
+
+            <span class="label label-blue">
+              คุณภาพ
+            </span>
+
+            <span class="label label-blue">
+              เอกสาร
+            </span>
+
+          </div>
+
+
+          <div class="card-actions">
+
+            <button
+              class="small-btn primary"
+              onclick="startAssessment('associate')">
+
+              ประเมินความพร้อม
+
+            </button>
+
+            <button
+              class="small-btn"
+              onclick="goTo('knowledge')">
+
+              ดูข้อมูลก่อน
+
+            </button>
+
+          </div>
+
+
+        </article>
+
+
+
+        <article class="position-card">
+
+
+          <div class="position-code">
+            PATH 03 · PROFESSOR
+          </div>
+
+
+          <h3>
+            ศาสตราจารย์
+          </h3>
+
+
+          <p>
+
+            จัดระบบข้อมูล ผลงาน
+            หลักฐาน และเงื่อนไข
+            สำหรับการยื่นในระดับตำแหน่งสูงขึ้น
+
+          </p>
+
+
+          <div class="tags">
+
+            <span class="label label-blue">
+              คุณสมบัติ
+            </span>
+
+            <span class="label label-blue">
+              ผลงาน
+            </span>
+
+            <span class="label label-blue">
+              หลักฐาน
+            </span>
+
+          </div>
+
+
+          <div class="card-actions">
+
+            <button
+              class="small-btn primary"
+              onclick="startAssessment('professor')">
+
+              ประเมินความพร้อม
+
+            </button>
+
+            <button
+              class="small-btn"
+              onclick="goTo('knowledge')">
+
+              ดูข้อมูลก่อน
+
+            </button>
+
+          </div>
+
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         7 CONTENT MODULES
+    ====================================================== -->
+
+    <section
+      class="section reveal"
+      id="knowledge">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-kicker">
+            02 · CONTENT LABELS
+          </div>
+
+          <h2>
+            7 เรื่องที่ต้องรู้ก่อนยื่น
+          </h2>
+
+          <p>
+
+            สาระหลักถูกจัดเป็น 7 หมวด
+            ตามกรอบเนื้อหาของงานวิจัย
+            เพื่อให้ค้นข้อมูลได้ง่าย
+            และเชื่อมโยงกับแบบประเมินความพร้อม
+
+          </p>
+
+        </div>
+
+
+        <div class="section-note">
+
+          คลิกแต่ละการ์ด
+          เพื่อดูรายละเอียด
+          และเปิดเอกสารที่เกี่ยวข้อง
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="module-grid">
+
+
+        <article
+          class="module-card module-wide"
+          onclick="openModule(1)">
+
+          <div class="module-number">
+            01
+          </div>
+
+          <h3>
+            คุณสมบัติเฉพาะตำแหน่ง
+          </h3>
+
+          <p>
+
+            ตรวจวุฒิ ระยะเวลา
+            ตำแหน่งปัจจุบัน
+            และเงื่อนไขตามประกาศ
+
+          </p>
+
+          <div class="tags">
+
+            <span class="label label-gold">
+              Eligibility
+            </span>
+
+            <span class="label label-blue">
+              คุณสมบัติ
+            </span>
+
+          </div>
+
+          <div class="module-open">
+            เปิดรายละเอียด →
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="module-card"
+          onclick="openModule(2)">
+
+          <div class="module-number">
+            02
+          </div>
+
+          <h3>
+            หลักเกณฑ์ด้านผลการสอน
+          </h3>
+
+          <p>
+            การประเมินผลการสอน
+            เอกสารคำสอน และหลักฐานที่เกี่ยวข้อง
+          </p>
+
+          <div class="module-open">
+            →
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="module-card"
+          onclick="openModule(3)">
+
+          <div class="module-number">
+            03
+          </div>
+
+          <h3>
+            หลักเกณฑ์ด้านผลงานทางวิชาการ
+          </h3>
+
+          <p>
+            ประเภท จำนวน
+            ระดับคุณภาพ และการมีส่วนร่วม
+          </p>
+
+          <div class="module-open">
+            →
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="module-card"
+          onclick="openModule(4)">
+
+          <div class="module-number">
+            04
+          </div>
+
+          <h3>
+            จริยธรรมและจรรยาบรรณทางวิชาการ
+          </h3>
+
+          <p>
+            การอ้างอิง
+            การมีส่วนร่วม
+            และหลักฐานด้านจริยธรรม
+          </p>
+
+          <div class="module-open">
+            →
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="module-card"
+          onclick="openModule(5)">
+
+          <div class="module-number">
+            05
+          </div>
+
+          <h3>
+            หลักเกณฑ์การเผยแพร่ผลงาน
+          </h3>
+
+          <p>
+            คุณสมบัติของช่องทางเผยแพร่
+            และหลักฐานประกอบ
+          </p>
+
+          <div class="module-open">
+            →
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="module-card"
+          onclick="openModule(6)">
+
+          <div class="module-number">
+            06
+          </div>
+
+          <h3>
+            สาขาวิชาและการเทียบเคียง
+          </h3>
+
+          <p>
+            ชื่อสาขาวิชา อนุสาขา
+            และความสอดคล้องกับผลงาน
+          </p>
+
+          <div class="module-open">
+            →
+          </div>
+
+        </article>
+
+
+
+        <article
+          class="module-card module-wide"
+          onclick="openModule(7)">
+
+          <div class="module-number">
+            07
+          </div>
+
+          <h3>
+            เอกสาร แบบฟอร์ม และหลักฐานที่ใช้ในการยื่นขอ
+          </h3>
+
+          <p>
+
+            รวมแบบคำขอ แบบประเมิน
+            หนังสือรับรอง Checklist
+            และเอกสารประกอบการยื่น
+
+          </p>
+
+          <div class="tags">
+
+            <span class="label label-gold">
+              Documents
+            </span>
+
+            <span class="label label-blue">
+              Checklist
+            </span>
+
+          </div>
+
+          <div class="module-open">
+            เปิดรายละเอียด →
+          </div>
+
+        </article>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         RESOURCE CENTER
+    ====================================================== -->
+
+    <section
+      class="section reveal"
+      id="resources">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-kicker">
+            03 · RESOURCE CENTER
+          </div>
+
+          <h2>
+            เอกสารและเครื่องมือในจุดเดียว
+          </h2>
+
+          <p>
+
+            เข้าถึงแบบฟอร์ม ผลการสอน
+            Checklist ประกาศ สิทธิประโยชน์
+            อินโฟกราฟิก และเอกสารดาวน์โหลด
+            โดยไม่ต้องค้นจากหลายหน้า
+
+          </p>
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="resource-grid">
+
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1o9_cnzbbsMcHCuvcqv8jxX3FJC3WYma6?usp=drive_link"
+          target="_blank"
+          rel="noopener">
+
+          <div class="resource-icon">
+            01
+          </div>
+
+          <div>
+
+            <strong>
+              แบบฟอร์มหลัก
+            </strong>
+
+            <small>
+              แบบฟอร์มหลักที่เกี่ยวข้องกับการเสนอขอกำหนดตำแหน่ง
+            </small>
+
+            <span class="resource-link">
+              เปิดโฟลเดอร์ ↗
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1JWPwuvCFWLMh7VnLDjrrxGU9V_QHxe7r?usp=drive_link"
+          target="_blank"
+          rel="noopener">
+
+          <div class="resource-icon">
+            02
+          </div>
+
+          <div>
+
+            <strong>
+              ผลการสอน / เอกสารคำสอน
+            </strong>
+
+            <small>
+              เอกสารและแบบฟอร์มสำหรับการประเมินผลการสอน
+            </small>
+
+            <span class="resource-link">
+              เปิดโฟลเดอร์ ↗
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1URTAHKyA_UZdoyS7eAaTfHu559sq5OwC?usp=drive_link"
+          target="_blank"
+          rel="noopener">
+
+          <div class="resource-icon">
+            ✓
+          </div>
+
+          <div>
+
+            <strong>
+              เช็คลิสต์และรายการเอกสาร
+            </strong>
+
+            <small>
+              ใช้ตรวจสอบความครบถ้วนก่อนดำเนินการยื่น
+            </small>
+
+            <span class="resource-link">
+              เปิดโฟลเดอร์ ↗
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1WHc3SsV0WJ3LyCEI4oi7q0Z2In03i8P3?usp=drive_link"
+          target="_blank"
+          rel="noopener">
+
+          <div class="resource-icon">
+            §
+          </div>
+
+          <div>
+
+            <strong>
+              กฎหมาย เกณฑ์ และประกาศ
+            </strong>
+
+            <small>
+              ตรวจประกาศและหลักเกณฑ์ฉบับที่เกี่ยวข้อง
+            </small>
+
+            <span class="resource-link">
+              เปิดโฟลเดอร์ ↗
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/16Fth1LZYp-Cn4JQ9Gif2jrjsTdV5sill?usp=drive_link"
+          target="_blank"
+          rel="noopener">
+
+          <div class="resource-icon">
+            ฿
+          </div>
+
+          <div>
+
+            <strong>
+              สิทธิประโยชน์และเงินประจำตำแหน่ง
+            </strong>
+
+            <small>
+              ข้อมูลประกอบการวางแผนความก้าวหน้าในสายวิชาการ
+            </small>
+
+            <span class="resource-link">
+              เปิดโฟลเดอร์ ↗
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1Ktzaxbo3DDWjYOIxDEgtvZSUnRoUcFgz?usp=drive_link"
+          target="_blank"
+          rel="noopener">
+
+          <div class="resource-icon">
+            ↳
+          </div>
+
+          <div>
+
+            <strong>
+              Flowchart / ภาพอินโฟกราฟิก
+            </strong>
+
+            <small>
+              ภาพสรุปขั้นตอนและเส้นทางการดำเนินการ
+            </small>
+
+            <span class="resource-link">
+              เปิดโฟลเดอร์ ↗
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          class="resource-card"
+          href="https://drive.google.com/drive/folders/1cyB7dmVX67S4VmP5rvOyPTomnC-iqis3?usp=drive_link"
+          target="_blank"
+          rel="noopener">
+
+          <div class="resource-icon">
+            ↓
+          </div>
+
+          <div>
+
+            <strong>
+              เอกสารดาวน์โหลด
+            </strong>
+
+            <small>
+              ศูนย์รวมเอกสารสำหรับดาวน์โหลดและนำไปใช้งาน
+            </small>
+
+            <span class="resource-link">
+              เปิดโฟลเดอร์ ↗
+            </span>
+
+          </div>
+
+        </a>
+
+
+
+        <a
+          class="resource-card"
+          href="#assessment">
+
+          <div class="resource-icon">
+            ★
+          </div>
+
+          <div>
+
+            <strong>
+              ประเมินความพร้อม
+            </strong>
+
+            <small>
+              ทำแบบประเมินและดูผลทันทีภายใน Web App
+            </small>
+
+            <span class="resource-link">
+              เริ่มประเมิน →
+            </span>
+
+          </div>
+
+        </a>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         ASSESSMENT
+    ====================================================== -->
+
+    <section
+      class="section reveal"
+      id="assessment">
+
+
+      <div class="section-header">
+
+
+        <div>
+
+          <div class="section-kicker">
+            04 · READINESS ASSESSMENT
+          </div>
+
+          <h2>
+            ประเมินความพร้อมในการยื่นขอตำแหน่ง
+          </h2>
+
+          <p>
+
+            เลือกตำแหน่งและตอบคำถาม
+            ระบบจะคำนวณคะแนนความพร้อม
+            แสดงประเด็นที่ยังต้องทบทวน
+            และแนะนำเอกสารที่ควรเปิดดูต่อ
+
+          </p>
+
+        </div>
+
+
+        <div class="section-note">
+
+          เป็นการประเมินความพร้อมเบื้องต้น
+          ไม่ใช่การรับรองคุณสมบัติอย่างเป็นทางการ
+
+        </div>
+
+
+      </div>
+
+
+
+      <div class="assessment-shell">
+
+
+        <div class="assessment-top">
+
+
+          <div>
+
+            <h3 id="assessmentTitle">
+              เริ่มประเมินความพร้อม
+            </h3>
+
+            <p id="assessmentSubtitle">
+              เลือกตำแหน่งที่ต้องการยื่นก่อนเริ่มตอบคำถาม
+            </p>
+
+          </div>
+
+
+          <div
+            class="assessment-step"
+            id="assessmentStep">
+
+            ขั้นที่ 1/4
+
+          </div>
+
+
+        </div>
+
+
+
+        <div class="assessment-body">
+
+
+          <!-- POSITION STEP -->
+
+          <div id="positionStep">
+
+
+            <p class="assessment-intro">
+
+              โปรดเลือกตำแหน่งที่ต้องการประเมิน
+              ระบบจะใช้ตำแหน่งดังกล่าวประกอบการแสดงผล
+              และแนะนำเอกสารที่เกี่ยวข้อง
+
+            </p>
+
+
+
+            <div class="position-select">
+
+
+              <button
+                class="position-choice"
+                data-position="assistant"
+                onclick="selectPosition('assistant', this)">
+
+                <strong>
+                  ผู้ช่วยศาสตราจารย์
+                </strong>
+
+                <span>
+                  Assistant Professor
+                </span>
+
+              </button>
+
+
+
+              <button
+                class="position-choice"
+                data-position="associate"
+                onclick="selectPosition('associate', this)">
+
+                <strong>
+                  รองศาสตราจารย์
+                </strong>
+
+                <span>
+                  Associate Professor
+                </span>
+
+              </button>
+
+
+
+              <button
+                class="position-choice"
+                data-position="professor"
+                onclick="selectPosition('professor', this)">
+
+                <strong>
+                  ศาสตราจารย์
+                </strong>
+
+                <span>
+                  Professor
+                </span>
+
+              </button>
+
+
+            </div>
+
+
+
+            <div class="assessment-actions">
+
+              <span></span>
+
+              <button
+                class="assessment-btn next"
+                onclick="nextFromPosition()">
+
+                เริ่มตอบคำถาม →
+
+              </button>
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- QUESTION STEP -->
+
+          <div
+            id="questionStep"
+            style="display:none;">
+
+
+            <div id="questionContainer">
+            </div>
+
+
+
+            <div class="assessment-actions">
+
+
+              <button
+                class="assessment-btn back"
+                onclick="backQuestionStep()">
+
+                ← ย้อนกลับ
+
+              </button>
+
+
+              <button
+                class="assessment-btn next"
+                onclick="nextQuestionStep()">
+
+                ถัดไป →
+
+              </button>
+
+
+            </div>
+
+
+          </div>
+
+
+
+          <!-- RESULT STEP -->
+
+          <div
+            id="resultStep"
+            class="result-section">
+
+
+            <div class="result-hero">
+
+
+              <div
+                class="score-ring"
+                id="scoreRing">
+
+                <strong id="scoreText">
+                  0%
+                </strong>
+
+              </div>
+
+
+
+              <div>
+
+
+                <span
+                  class="label label-blue"
+                  id="resultLabel">
+
+                  READINESS
+
+                </span>
+
+
+                <h4 id="resultTitle">
+
+                  ผลการประเมิน
+
+                </h4>
+
+
+                <p id="resultSummary">
+                </p>
+
+
+              </div>
+
+
+            </div>
+
+
+
+            <div class="result-grid">
+
+
+              <div class="result-box">
+
+
+                <h5>
+                  จุดที่พร้อม
+                </h5>
+
+
+                <div
+                  class="result-list"
+                  id="readyList">
+                </div>
+
+
+              </div>
+
+
+
+              <div class="result-box">
+
+
+                <h5>
+                  ประเด็นที่ควรทบทวน
+                </h5>
+
+
+                <div
+                  class="result-list"
+                  id="gapList">
+                </div>
+
+
+                <div class="result-resource-title">
+
+                  เอกสารที่แนะนำ
+
+                </div>
+
+
+                <div
+                  class="result-links"
+                  id="resultLinks">
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+
+
+            <div class="disclaimer">
+
+              <strong>
+                ข้อควรทราบ:
+              </strong>
+
+              คะแนนนี้สะท้อนความพร้อมจากคำตอบที่ผู้ใช้ประเมินตนเอง
+              ไม่ใช่ผลการรับรองว่าผู้ใช้ผ่านคุณสมบัติตามประกาศทุกข้อ
+
+              ก่อนยื่นจริงควรตรวจสอบกฎหมาย เกณฑ์
+              และประกาศฉบับปัจจุบัน
+              รวมทั้งให้หน่วยงานผู้รับผิดชอบตรวจสอบเอกสารอีกครั้ง
+
+            </div>
+
+
+
+            <div class="assessment-actions">
+
+
+              <button
+                class="assessment-btn reset"
+                onclick="resetAssessment()">
+
+                เริ่มประเมินใหม่
+
+              </button>
+
+
+              <button
+                class="assessment-btn back"
+                onclick="window.print()">
+
+                พิมพ์ / บันทึกผลเป็น PDF
+
+              </button>
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+
+    <!-- =====================================================
+         OFFICIAL REFERENCES
+    ====================================================== -->
+
+    <section
+      class="section reveal"
+      id="official">
+
+
+      <div class="reference-box">
+
+
+        <div>
+
+
+          <span class="label label-white">
+            OFFICIAL REFERENCES
+          </span>
+
+
+          <h3>
+            ตรวจสอบเอกสารทางการก่อนยื่นจริง
+          </h3>
+
+
+          <p>
+
+            ใช้ Web App เป็นเครื่องมือช่วยจัดระบบข้อมูลและเตรียมความพร้อม
+            แต่ควรตรวจประกาศ แบบฟอร์ม และเอกสารต้นฉบับ
+            ก่อนส่งเรื่องทุกครั้ง
+
+          </p>
+
+
+        </div>
+
+
+
+        <div class="reference-links">
+
+
+          <a
+            class="reference-link"
+            href="https://drive.google.com/drive/folders/1WHc3SsV0WJ3LyCEI4oi7q0Z2In03i8P3?usp=drive_link"
+            target="_blank"
+            rel="noopener">
+
+            <span>
+              กฎหมาย เกณฑ์ และประกาศ
+            </span>
+
+            <b>
+              เปิด ↗
+            </b>
+
+          </a>
+
+
+
+          <a
+            class="reference-link"
+            href="https://drive.google.com/drive/folders/1JWPwuvCFWLMh7VnLDjrrxGU9V_QHxe7r?usp=drive_link"
+            target="_blank"
+            rel="noopener">
+
+            <span>
+              ผลการสอน / เอกสารคำสอน
+            </span>
+
+            <b>
+              เปิด ↗
+            </b>
+
+          </a>
+
+
+
+          <a
+            class="reference-link"
+            href="https://drive.google.com/drive/folders/1o9_cnzbbsMcHCuvcqv8jxX3FJC3WYma6?usp=drive_link"
+            target="_blank"
+            rel="noopener">
+
+            <span>
+              แบบฟอร์มหลัก
+            </span>
+
+            <b>
+              เปิด ↗
+            </b>
+
+          </a>
+
+
+
+          <a
+            class="reference-link"
+            href="https://drive.google.com/drive/folders/1URTAHKyA_UZdoyS7eAaTfHu559sq5OwC?usp=drive_link"
+            target="_blank"
+            rel="noopener">
+
+            <span>
+              Checklist เอกสาร
+            </span>
+
+            <b>
+              เปิด ↗
+            </b>
+
+          </a>
+
+
+        </div>
+
+
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =======================================================
+       FOOTER
+  ======================================================== -->
+
+<footer>
+
+  <div class="footer-inner">
+
+
+    <div class="footer-info">
+
+      <strong>
+        จัดทำโดย คณะศิลปศาสตร์ มหาวิทยาลัยเทคโนโลยีราชมงคลธัญบุรี
+      </strong>
+
+      <div class="footer-contact-title">
+        สอบถามเพิ่มเติม
+      </div>
+
+
+      <div class="footer-contact-row">
+
+
+        <a
+          class="footer-contact-item"
+          href="tel:025494947">
+
+          <span class="contact-icon">
+            ☎
+          </span>
+
+          <span>
+            02 549 4947
+          </span>
+
+        </a>
+
+
+        <a
+          class="footer-contact-item"
+          href="mailto:patcharin_k@rmutt.ac.th">
+
+          <span class="contact-icon">
+            ✉
+          </span>
+
+          <span>
+            patcharin_k@rmutt.ac.th
+          </span>
+
+        </a>
+
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-tag">
+
+      Faculty of Liberal Arts · RMUTT
+
+    </div>
+
+
+  </div>
+
+</footer>
+
+
+  <!-- =======================================================
+       BOTTOM NAVIGATION
+  ======================================================== -->
+
+  <nav class="bottom-nav">
+
+
+    <button
+      data-section="home"
+      onclick="goTo('home')">
+
+      หน้าแรก
+
+    </button>
+
+
+    <button
+      data-section="positions"
+      onclick="goTo('positions')">
+
+      ตำแหน่ง
+
+    </button>
+
+
+    <button
+      data-section="knowledge"
+      onclick="goTo('knowledge')">
+
+      7 เรื่อง
+
+    </button>
+
+
+    <button
+      data-section="resources"
+      onclick="goTo('resources')">
+
+      เอกสาร
+
+    </button>
+
+
+    <button
+      data-section="assessment"
+      onclick="goTo('assessment')">
+
+      ประเมิน
+
+    </button>
+
+
+  </nav>
+
+
+
+  <!-- =======================================================
+       CONTENT MODAL
+  ======================================================== -->
+
+  <div
+    class="modal"
+    id="contentModal"
+    onclick="modalBackdrop(event)">
+
+
+    <div class="modal-card">
+
+
+      <div class="modal-top">
+
+
+        <div>
+
+
+          <span
+            class="label label-blue"
+            id="modalLabel">
+
+            MODULE
+
+          </span>
+
+
+          <h3 id="modalTitle">
+
+            รายละเอียด
+
+          </h3>
+
+
+        </div>
+
+
+        <button
+          class="modal-close"
+          onclick="closeModule()">
+
+          ×
+
+        </button>
+
+
+      </div>
+
+
+
+      <div
+        class="modal-body"
+        id="modalBody">
+      </div>
+
+
+
+      <div
+        class="modal-actions"
+        id="modalActions">
+      </div>
+
+
+
+      <div class="modal-source">
+
+        โปรดตรวจสอบรายละเอียดกับประกาศ
+        หลักเกณฑ์ และเอกสารทางการฉบับปัจจุบัน
+        ก่อนนำข้อมูลไปใช้ในการยื่นจริง
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+  <script>
+
+
+    /* =========================================================
+       DRIVE LINKS
+    ========================================================== */
+
+    const LINKS = {
+
+
+      mainForms:
+      "https://drive.google.com/drive/folders/1o9_cnzbbsMcHCuvcqv8jxX3FJC3WYma6?usp=drive_link",
+
+
+      teaching:
+      "https://drive.google.com/drive/folders/1JWPwuvCFWLMh7VnLDjrrxGU9V_QHxe7r?usp=drive_link",
+
+
+      checklist:
+      "https://drive.google.com/drive/folders/1URTAHKyA_UZdoyS7eAaTfHu559sq5OwC?usp=drive_link",
+
+
+      regulations:
+      "https://drive.google.com/drive/folders/1WHc3SsV0WJ3LyCEI4oi7q0Z2In03i8P3?usp=drive_link",
+
+
+      benefits:
+      "https://drive.google.com/drive/folders/16Fth1LZYp-Cn4JQ9Gif2jrjsTdV5sill?usp=drive_link",
+
+
+      flowchart:
+      "https://drive.google.com/drive/folders/1Ktzaxbo3DDWjYOIxDEgtvZSUnRoUcFgz?usp=drive_link",
+
+
+      downloads:
+      "https://drive.google.com/drive/folders/1cyB7dmVX67S4VmP5rvOyPTomnC-iqis3?usp=drive_link"
+
+
+    };
+
+
+
+    /* =========================================================
+       POSITION
+    ========================================================== */
+
+    const POSITION_NAME = {
+
+
+      assistant:
+      "ผู้ช่วยศาสตราจารย์",
+
+
+      associate:
+      "รองศาสตราจารย์",
+
+
+      professor:
+      "ศาสตราจารย์"
+
+
+    };
+
+
+
+    /* =========================================================
+       7 CONTENT MODULES
+    ========================================================== */
+
+    const MODULES = {
+
+
+      1: {
+
+        label:
+        "01 · ELIGIBILITY",
+
+        title:
+        "คุณสมบัติเฉพาะตำแหน่ง",
+
+        intro:
+        "ใช้เป็นจุดเริ่มต้นสำหรับตรวจสอบว่าคุณสมบัติเบื้องต้นสอดคล้องกับระดับตำแหน่งที่ต้องการยื่นหรือไม่",
+
+        items: [
+
+          "วุฒิการศึกษาและเงื่อนไขที่เกี่ยวข้อง",
+
+          "ระยะเวลาการปฏิบัติงานหรือดำรงตำแหน่ง",
+
+          "สถานะตำแหน่งทางวิชาการปัจจุบัน",
+
+          "เงื่อนไขเฉพาะของระดับตำแหน่งที่จะเสนอขอ"
+
+        ],
+
+        resources: [
+
+          ["กฎหมาย เกณฑ์ และประกาศ", LINKS.regulations],
+
+          ["Flowchart / อินโฟกราฟิก", LINKS.flowchart]
+
+        ]
+
+      },
+
+
+
+      2: {
+
+        label:
+        "02 · TEACHING",
+
+        title:
+        "หลักเกณฑ์ด้านผลการสอน",
+
+        intro:
+        "รวบรวมข้อมูลการประเมินผลการสอนและเอกสารคำสอนที่เกี่ยวข้องกับการเสนอขอตำแหน่ง",
+
+        items: [
+
+          "ผู้ที่ต้องผ่านการประเมินผลการสอน",
+
+          "องค์ประกอบและวิธีการประเมิน",
+
+          "เอกสารคำสอนหรือหลักฐานประกอบ",
+
+          "ระดับผลการประเมินที่เกี่ยวข้อง"
+
+        ],
+
+        resources: [
+
+          ["ผลการสอน / เอกสารคำสอน", LINKS.teaching],
+
+          ["แบบฟอร์มหลัก", LINKS.mainForms]
+
+        ]
+
+      },
+
+
+
+      3: {
+
+        label:
+        "03 · ACADEMIC WORK",
+
+        title:
+        "หลักเกณฑ์ด้านผลงานทางวิชาการ",
+
+        intro:
+        "ช่วยตรวจสอบประเภท จำนวน คุณภาพ และการมีส่วนร่วมในผลงานก่อนนำมาใช้ประกอบการยื่น",
+
+        items: [
+
+          "ประเภทผลงานที่ใช้ยื่น",
+
+          "จำนวนผลงานตามเกณฑ์",
+
+          "ระดับคุณภาพของผลงาน",
+
+          "บทบาทหรือการมีส่วนร่วมในผลงาน"
+
+        ],
+
+        resources: [
+
+          ["กฎหมาย เกณฑ์ และประกาศ", LINKS.regulations],
+
+          ["Flowchart / อินโฟกราฟิก", LINKS.flowchart]
+
+        ]
+
+      },
+
+
+
+      4: {
+
+        label:
+        "04 · ETHICS",
+
+        title:
+        "จริยธรรมและจรรยาบรรณทางวิชาการ",
+
+        intro:
+        "ใช้ทบทวนประเด็นด้านความถูกต้องและความซื่อสัตย์ทางวิชาการก่อนยื่นผลงาน",
+
+        items: [
+
+          "การอ้างอิงแหล่งข้อมูลอย่างถูกต้อง",
+
+          "การใช้ผลงานเดิมอย่างเหมาะสม",
+
+          "การแสดงการมีส่วนร่วมตามความเป็นจริง",
+
+          "หลักฐานจริยธรรมการวิจัยเมื่อเกี่ยวข้อง"
+
+        ],
+
+        resources: [
+
+          ["กฎหมาย เกณฑ์ และประกาศ", LINKS.regulations]
+
+        ]
+
+      },
+
+
+
+      5: {
+
+        label:
+        "05 · PUBLICATION",
+
+        title:
+        "หลักเกณฑ์การเผยแพร่ผลงาน",
+
+        intro:
+        "ตรวจสอบช่องทางเผยแพร่และหลักฐานที่เกี่ยวข้องก่อนนำผลงานมาใช้ประกอบการเสนอขอ",
+
+        items: [
+
+          "รูปแบบการเผยแพร่",
+
+          "คุณสมบัติของวารสารหรือแหล่งเผยแพร่",
+
+          "ความต่อเนื่องหรือคุณสมบัติของแหล่งเผยแพร่",
+
+          "หลักฐานการเผยแพร่ที่ต้องแนบ"
+
+        ],
+
+        resources: [
+
+          ["กฎหมาย เกณฑ์ และประกาศ", LINKS.regulations]
+
+        ]
+
+      },
+
+
+
+      6: {
+
+        label:
+        "06 · FIELD",
+
+        title:
+        "การกำหนดชื่อสาขาวิชาและการเทียบเคียง",
+
+        intro:
+        "ช่วยตรวจสอบชื่อสาขาวิชาและอนุสาขาให้สอดคล้องกับความเชี่ยวชาญ ภาระงานสอน และผลงาน",
+
+        items: [
+
+          "ชื่อสาขาวิชาตามประกาศ",
+
+          "ชื่ออนุสาขาที่เกี่ยวข้อง",
+
+          "ความสอดคล้องกับภาระงานสอน",
+
+          "ความสอดคล้องกับผลงานและความเชี่ยวชาญ"
+
+        ],
+
+        resources: [
+
+          ["กฎหมาย เกณฑ์ และประกาศ", LINKS.regulations]
+
+        ]
+
+      },
+
+
+
+      7: {
+
+        label:
+        "07 · DOCUMENTS",
+
+        title:
+        "เอกสาร แบบฟอร์ม และหลักฐานที่ใช้ในการยื่นขอ",
+
+        intro:
+        "รวมแหล่งเอกสารที่จำเป็นสำหรับการเตรียมชุดเสนอขอไว้ในจุดเดียว",
+
+        items: [
+
+          "แบบคำขอและแบบประเมิน",
+
+          "หนังสือรับรอง",
+
+          "แบบแสดงการมีส่วนร่วม",
+
+          "ผลงานทางวิชาการ",
+
+          "หลักฐานการเผยแพร่",
+
+          "Checklist และเอกสารประกอบอื่น"
+
+        ],
+
+        resources: [
+
+          ["แบบฟอร์มหลัก", LINKS.mainForms],
+
+          ["Checklist เอกสาร", LINKS.checklist],
+
+          ["เอกสารดาวน์โหลด", LINKS.downloads]
+
+        ]
+
+      }
+
+
+    };
+
+
+
+    /* =========================================================
+       READINESS QUESTIONS
+    ========================================================== */
+
+    const READINESS_QUESTIONS = [
+
+
+      {
+
+        id:
+        "qualification",
+
+        group:
+        1,
+
+        critical:
+        true,
+
+        label:
+        "ฉันได้ตรวจสอบคุณสมบัติและระยะเวลาตามเกณฑ์ของตำแหน่งที่เลือกจากประกาศฉบับปัจจุบันแล้ว",
+
+        resource:
+        "regulations"
+
+      },
+
+
+
+      {
+
+        id:
+        "teaching",
+
+        group:
+        1,
+
+        critical:
+        true,
+
+        label:
+        "ฉันทราบว่าตำแหน่งที่เลือกต้องประเมินผลการสอนในลักษณะใด และได้เตรียมเอกสารหรือเอกสารคำสอนที่เกี่ยวข้องแล้ว",
+
+        resource:
+        "teaching"
+
+      },
+
+
+
+      {
+
+        id:
+        "workType",
+
+        group:
+        2,
+
+        critical:
+        true,
+
+        label:
+        "ฉันตรวจสอบแล้วว่าประเภทและจำนวนผลงานทางวิชาการของฉันสอดคล้องกับหลักเกณฑ์ของตำแหน่งที่เลือก",
+
+        resource:
+        "regulations"
+
+      },
+
+
+
+      {
+
+        id:
+        "workQuality",
+
+        group:
+        2,
+
+        critical:
+        true,
+
+        label:
+        "ฉันตรวจสอบระดับคุณภาพและบทบาทหรือการมีส่วนร่วมในผลงานแต่ละชิ้นแล้ว",
+
+        resource:
+        "regulations"
+
+      },
+
+
+
+      {
+
+        id:
+        "ethics",
+
+        group:
+        2,
+
+        critical:
+        true,
+
+        label:
+        "ผลงานที่จะยื่นมีการอ้างอิง การแสดงการมีส่วนร่วม และหลักฐานด้านจริยธรรมการวิจัยอย่างถูกต้องเมื่อเกี่ยวข้อง",
+
+        resource:
+        "regulations"
+
+      },
+
+
+
+      {
+
+        id:
+        "publication",
+
+        group:
+        2,
+
+        critical:
+        true,
+
+        label:
+        "ฉันตรวจสอบว่าช่องทางเผยแพร่ของผลงานแต่ละชิ้นเป็นไปตามหลักเกณฑ์ที่ใช้กับการยื่นตำแหน่งนี้แล้ว",
+
+        resource:
+        "regulations"
+
+      },
+
+
+
+      {
+
+        id:
+        "field",
+
+        group:
+        3,
+
+        critical:
+        false,
+
+        label:
+        "ฉันตรวจสอบชื่อสาขาวิชา/อนุสาขาที่จะเสนอขอ และความสอดคล้องกับภาระงานสอนและผลงานแล้ว",
+
+        resource:
+        "regulations"
+
+      },
+
+
+
+      {
+
+        id:
+        "forms",
+
+        group:
+        3,
+
+        critical:
+        true,
+
+        label:
+        "ฉันมีแบบฟอร์มหลักฉบับปัจจุบัน และทราบว่าแบบฟอร์มแต่ละฉบับต้องกรอกหรือแนบข้อมูลใด",
+
+        resource:
+        "mainForms"
+
+      },
+
+
+
+      {
+
+        id:
+        "checklist",
+
+        group:
+        3,
+
+        critical:
+        false,
+
+        label:
+        "ฉันตรวจรายการเอกสารใน Checklist และทราบว่ารายการใดยังต้องจัดเตรียมเพิ่มเติม",
+
+        resource:
+        "checklist"
+
+      },
+
+
+
+      {
+
+        id:
+        "evidence",
+
+        group:
+        3,
+
+        critical:
+        false,
+
+        label:
+        "ฉันรวบรวมหลักฐานประกอบ เช่น หนังสือรับรอง แบบแสดงการมีส่วนร่วม และหลักฐานการเผยแพร่ไว้แล้ว",
+
+        resource:
+        "downloads"
+
+      },
+
+
+
+      {
+
+        id:
+        "latest",
+
+        group:
+        3,
+
+        critical:
+        true,
+
+        label:
+        "ก่อนเตรียมยื่น ฉันได้ตรวจสอบกฎหมาย เกณฑ์ และประกาศฉบับล่าสุดอีกครั้งแล้ว",
+
+        resource:
+        "regulations"
+
+      },
+
+
+
+      {
+
+        id:
+        "finalReview",
+
+        group:
+        3,
+
+        critical:
+        false,
+
+        label:
+        "ฉันวางแผนให้หน่วยงานหรือผู้รับผิดชอบตรวจสอบความครบถ้วนของชุดเอกสารก่อนยื่นจริง",
+
+        resource:
+        "checklist"
+
+      }
+
+
+    ];
+
+
+
+    /* =========================================================
+       ASSESSMENT STATE
+    ========================================================== */
+
+    let selectedPosition = null;
+
+    let currentQuestionGroup = 1;
+
+    let readinessAnswers = {};
+
+
+
+    /* =========================================================
+       NAVIGATION
+    ========================================================== */
+
+    function goTo(id) {
+
+
+      const section =
+        document.getElementById(id);
+
+
+      if(section) {
+
+        section.scrollIntoView({
+
+          behavior:
+            "smooth",
+
+          block:
+            "start"
+
+        });
+
+      }
+
+
+    }
+
+
+
+    /* =========================================================
+       POSITION QUICK START
+    ========================================================== */
+
+    function startAssessment(position) {
+
+
+      goTo("assessment");
+
+
+      setTimeout(() => {
+
+
+        const element =
+          document.querySelector(
+            `[data-position="${position}"]`
+          );
+
+
+        selectPosition(
+          position,
+          element
+        );
+
+
+        nextFromPosition();
+
+
+      }, 350);
+
+
+    }
+
+
+
+    /* =========================================================
+       SELECT POSITION
+    ========================================================== */
+
+    function selectPosition(
+      position,
+      element
+    ) {
+
+
+      selectedPosition =
+        position;
+
+
+      document
+        .querySelectorAll(
+          ".position-choice"
+        )
+        .forEach(
+
+          item => {
+
+            item.classList
+              .remove(
+                "selected"
+              );
+
+          }
+
+        );
+
+
+      if(element) {
+
+        element.classList
+          .add(
+            "selected"
+          );
+
+      }
+
+
+      saveAssessmentState();
+
+
+    }
+
+
+
+    /* =========================================================
+       NEXT FROM POSITION
+    ========================================================== */
+
+    function nextFromPosition() {
+
+
+      if(!selectedPosition) {
+
+        alert(
+          "กรุณาเลือกตำแหน่งที่ต้องการประเมิน"
+        );
+
+        return;
+
+      }
+
+
+      currentQuestionGroup =
+        1;
+
+
+      document
+        .getElementById(
+          "positionStep"
+        )
+        .style
+        .display =
+        "none";
+
+
+      document
+        .getElementById(
+          "questionStep"
+        )
+        .style
+        .display =
+        "block";
+
+
+      document
+        .getElementById(
+          "resultStep"
+        )
+        .classList
+        .remove(
+          "show"
+        );
+
+
+      renderQuestionGroup();
+
+
+    }
+
+
+
+    /* =========================================================
+       RENDER QUESTION GROUP
+    ========================================================== */
+
+    function renderQuestionGroup() {
+
+
+      const questions =
+        READINESS_QUESTIONS
+          .filter(
+
+            question =>
+              question.group ===
+              currentQuestionGroup
+
+          );
+
+
+      document
+        .getElementById(
+          "assessmentTitle"
+        )
+        .textContent =
+
+        "ประเมินความพร้อม: " +
+
+        POSITION_NAME[
+          selectedPosition
+        ];
+
+
+
+      let subtitle =
+        "";
+
+
+      if(currentQuestionGroup === 1) {
+
+        subtitle =
+          "ส่วนที่ 1 คุณสมบัติและผลการสอน";
+
+      }
+
+
+      if(currentQuestionGroup === 2) {
+
+        subtitle =
+          "ส่วนที่ 2 ผลงาน จริยธรรม และการเผยแพร่";
+
+      }
+
+
+      if(currentQuestionGroup === 3) {
+
+        subtitle =
+          "ส่วนที่ 3 สาขาวิชา แบบฟอร์ม และเอกสาร";
+
+      }
+
+
+      document
+        .getElementById(
+          "assessmentSubtitle"
+        )
+        .textContent =
+        subtitle;
+
+
+
+      document
+        .getElementById(
+          "assessmentStep"
+        )
+        .textContent =
+
+        "ขั้นที่ " +
+
+        (
+          currentQuestionGroup +
+          1
+        ) +
+
+        "/4";
+
+
+
+      document
+        .getElementById(
+          "questionContainer"
+        )
+        .innerHTML =
+
+        questions
+          .map(
+
+            question => `
+
+
+            <div class="question">
+
+
+              <div class="question-head">
+
+
+                <strong>
+
+                  ${question.label}
+
+                </strong>
+
+
+                ${
+                  question.critical
+
+                    ?
+
+                    '<em class="critical">ประเด็นสำคัญ</em>'
+
+                    :
+
+                    ''
+                }
+
+
+              </div>
+
+
+
+              <div class="answers">
+
+
+                <button
+                  class="
+                    answer
+                    ${
+                      readinessAnswers[
+                        question.id
+                      ] === "yes"
+
+                        ?
+
+                        "selected yes"
+
+                        :
+
+                        ""
+                    }
+                  "
+
+                  onclick="
+                    setReadinessAnswer(
+                      '${question.id}',
+                      'yes',
+                      this
+                    )
+                  ">
+
+                  พร้อม / ใช่
+
+                </button>
+
+
+
+                <button
+                  class="
+                    answer
+                    ${
+                      readinessAnswers[
+                        question.id
+                      ] === "unsure"
+
+                        ?
+
+                        "selected unsure"
+
+                        :
+
+                        ""
+                    }
+                  "
+
+                  onclick="
+                    setReadinessAnswer(
+                      '${question.id}',
+                      'unsure',
+                      this
+                    )
+                  ">
+
+                  ยังไม่แน่ใจ
+
+                </button>
+
+
+
+                <button
+                  class="
+                    answer
+                    ${
+                      readinessAnswers[
+                        question.id
+                      ] === "no"
+
+                        ?
+
+                        "selected no"
+
+                        :
+
+                        ""
+                    }
+                  "
+
+                  onclick="
+                    setReadinessAnswer(
+                      '${question.id}',
+                      'no',
+                      this
+                    )
+                  ">
+
+                  ยังไม่พร้อม / ไม่ใช่
+
+                </button>
+
+
+              </div>
+
+
+            </div>
+
+
+            `
+
+          )
+          .join("");
+
+
+    }
+
+
+
+    /* =========================================================
+       SET ANSWER
+    ========================================================== */
+
+    function setReadinessAnswer(
+      id,
+      value,
+      button
+    ) {
+
+
+      readinessAnswers[id] =
+        value;
+
+
+      button
+        .parentElement
+        .querySelectorAll(
+          ".answer"
+        )
+        .forEach(
+
+          element => {
+
+            element.classList
+              .remove(
+                "selected",
+                "yes",
+                "unsure",
+                "no"
+              );
+
+          }
+
+        );
+
+
+      button.classList
+        .add(
+          "selected",
+          value
+        );
+
+
+      saveAssessmentState();
+
+
+    }
+
+
+
+    /* =========================================================
+       NEXT QUESTION PAGE
+    ========================================================== */
+
+    function nextQuestionStep() {
+
+
+      const questions =
+        READINESS_QUESTIONS
+          .filter(
+
+            question =>
+              question.group ===
+              currentQuestionGroup
+
+          );
+
+
+      const incomplete =
+        questions.some(
+
+          question =>
+            !readinessAnswers[
+              question.id
+            ]
+
+        );
+
+
+      if(incomplete) {
+
+        alert(
+          "กรุณาตอบคำถามในส่วนนี้ให้ครบทุกข้อก่อนดำเนินการต่อ"
+        );
+
+        return;
+
+      }
+
+
+      if(currentQuestionGroup < 3) {
+
+
+        currentQuestionGroup++;
+
+
+        renderQuestionGroup();
+
+
+        document
+          .getElementById(
+            "assessment"
+          )
+          .scrollIntoView({
+
+            behavior:
+              "smooth",
+
+            block:
+              "start"
+
+          });
+
+
+      }
+
+      else {
+
+
+        showAssessmentResult();
+
+
+      }
+
+
+    }
+
+
+
+    /* =========================================================
+       BACK QUESTION PAGE
+    ========================================================== */
+
+    function backQuestionStep() {
+
+
+      if(currentQuestionGroup > 1) {
+
+
+        currentQuestionGroup--;
+
+
+        renderQuestionGroup();
+
+
+      }
+
+      else {
+
+
+        document
+          .getElementById(
+            "questionStep"
+          )
+          .style
+          .display =
+          "none";
+
+
+        document
+          .getElementById(
+            "positionStep"
+          )
+          .style
+          .display =
+          "block";
+
+
+        document
+          .getElementById(
+            "assessmentTitle"
+          )
+          .textContent =
+          "เริ่มประเมินความพร้อม";
+
+
+        document
+          .getElementById(
+            "assessmentSubtitle"
+          )
+          .textContent =
+          "เลือกตำแหน่งที่ต้องการยื่นก่อนเริ่มตอบคำถาม";
+
+
+        document
+          .getElementById(
+            "assessmentStep"
+          )
+          .textContent =
+          "ขั้นที่ 1/4";
+
+
+      }
+
+
+    }
+
+
+
+    /* =========================================================
+       RESULT
+    ========================================================== */
+
+    function showAssessmentResult() {
+
+
+      const scoreValue = {
+
+        yes: 2,
+
+        unsure: 1,
+
+        no: 0
+
+      };
+
+
+      const maximum =
+        READINESS_QUESTIONS.length *
+        2;
+
+
+      const achieved =
+        READINESS_QUESTIONS
+          .reduce(
+
+            (
+              total,
+              question
+            ) => {
+
+              return (
+
+                total +
+
+                (
+                  scoreValue[
+                    readinessAnswers[
+                      question.id
+                    ]
+                  ]
+
+                  || 0
+                )
+
+              );
+
+            },
+
+            0
+
+          );
+
+
+      const percent =
+        Math.round(
+
+          achieved /
+          maximum *
+          100
+
+        );
+
+
+
+      const criticalNo =
+        READINESS_QUESTIONS
+          .filter(
+
+            question =>
+
+              question.critical &&
+
+              readinessAnswers[
+                question.id
+              ] ===
+              "no"
+
+          );
+
+
+
+      let level;
+
+      let labelClass;
+
+      let title;
+
+      let summary;
+
+
+
+      if(
+        percent >= 85 &&
+        criticalNo.length === 0
+      ) {
+
+
+        level =
+          "ความพร้อมสูง";
+
+
+        labelClass =
+          "label-green";
+
+
+        title =
+          "มีความพร้อมในระดับสูง";
+
+
+        summary =
+
+          "องค์ประกอบสำคัญส่วนใหญ่ได้รับการเตรียมแล้ว " +
+
+          "ควรตรวจความครบถ้วนและประกาศฉบับล่าสุดกับหน่วยงานก่อนยื่นจริง";
+
+
+      }
+
+
+      else if(
+        percent >= 65
+      ) {
+
+
+        level =
+          "ความพร้อมปานกลาง";
+
+
+        labelClass =
+          "label-orange";
+
+
+        title =
+          "มีความพร้อมบางส่วน";
+
+
+        summary =
+
+          "สามารถดำเนินการเตรียมต่อได้ " +
+
+          "แต่ยังมีบางประเด็นที่ควรตรวจสอบหรือจัดทำเพิ่มเติมก่อนยื่น";
+
+
+      }
+
+
+      else {
+
+
+        level =
+          "ควรเตรียมเพิ่มเติม";
+
+
+        labelClass =
+          "label-red";
+
+
+        title =
+          "ยังมีประเด็นที่ควรเตรียมเพิ่มเติม";
+
+
+        summary =
+
+          "ควรทบทวนเกณฑ์และจัดเตรียมเอกสารหรือหลักฐานที่ยังไม่พร้อม " +
+
+          "ก่อนเข้าสู่กระบวนการยื่น";
+
+
+      }
+
+
+
+      /*
+       * หากมี critical item ตอบ "ไม่"
+       * จะไม่ให้ระบบสื่อว่าพร้อมสูง
+       */
+
+      if(
+        criticalNo.length > 0 &&
+        percent >= 85
+      ) {
+
+
+        level =
+          "ความพร้อมปานกลาง";
+
+
+        labelClass =
+          "label-orange";
+
+
+        title =
+          "คะแนนรวมสูง แต่ยังมีประเด็นสำคัญที่ต้องตรวจสอบ";
+
+
+        summary =
+
+          "บางองค์ประกอบมีความพร้อมดีแล้ว " +
+
+          "แต่ยังมีประเด็นสำคัญที่ตอบว่ายังไม่พร้อม " +
+
+          "จึงควรตรวจสอบก่อนยื่นจริง";
+
+
+      }
+
+
+
+      const readyItems =
+        READINESS_QUESTIONS
+          .filter(
+
+            question =>
+              readinessAnswers[
+                question.id
+              ] ===
+              "yes"
+
+          );
+
+
+
+      const gapItems =
+        READINESS_QUESTIONS
+          .filter(
+
+            question =>
+              readinessAnswers[
+                question.id
+              ] !==
+              "yes"
+
+          );
+
+
+
+      document
+        .getElementById(
+          "questionStep"
+        )
+        .style
+        .display =
+        "none";
+
+
+      document
+        .getElementById(
+          "resultStep"
+        )
+        .classList
+        .add(
+          "show"
+        );
+
+
+      document
+        .getElementById(
+          "assessmentStep"
+        )
+        .textContent =
+        "ขั้นที่ 4/4";
+
+
+
+      const resultLabel =
+        document.getElementById(
+          "resultLabel"
+        );
+
+
+      resultLabel.className =
+        "label " +
+        labelClass;
+
+
+      resultLabel.textContent =
+        level;
+
+
+
+      document
+        .getElementById(
+          "resultTitle"
+        )
+        .textContent =
+        title;
+
+
+
+      document
+        .getElementById(
+          "resultSummary"
+        )
+        .textContent =
+
+        "ตำแหน่งที่ประเมิน: " +
+
+        POSITION_NAME[
+          selectedPosition
+        ] +
+
+        " · คะแนนความพร้อม " +
+
+        percent +
+
+        "% · " +
+
+        summary;
+
+
+
+      document
+        .getElementById(
+          "scoreText"
+        )
+        .textContent =
+        percent +
+        "%";
+
+
+
+      document
+        .getElementById(
+          "scoreRing"
+        )
+        .style
+        .setProperty(
+
+          "--scoredeg",
+
+          (
+            percent *
+            3.6
+          ) +
+          "deg"
+
+        );
+
+
+
+      /* READY LIST */
+
+      document
+        .getElementById(
+          "readyList"
+        )
+        .innerHTML =
+
+        readyItems.length
+
+          ?
+
+          readyItems
+            .map(
+
+              item => `
+
+                <div class="result-item">
+
+                  ✓
+                  ${shortReadinessLabel(item.id)}
+
+                </div>
+
+              `
+
+            )
+            .join("")
+
+          :
+
+          `
+
+            <div class="result-item">
+
+              ยังไม่มีรายการที่ตอบว่าพร้อม
+
+            </div>
+
+          `;
+
+
+
+      /* GAP LIST */
+
+      document
+        .getElementById(
+          "gapList"
+        )
+        .innerHTML =
+
+        gapItems.length
+
+          ?
+
+          gapItems
+            .map(
+
+              item => `
+
+                <div class="result-item">
+
+                  ${
+                    readinessAnswers[
+                      item.id
+                    ] ===
+                    "unsure"
+
+                      ?
+
+                      "?"
+
+                      :
+
+                      "!"
+                  }
+
+                  ${shortReadinessLabel(item.id)}
+
+                </div>
+
+              `
+
+            )
+            .join("")
+
+          :
+
+          `
+
+            <div class="result-item">
+
+              ไม่พบประเด็นที่ต้องทบทวน
+              จากคำตอบในแบบประเมิน
+
+            </div>
+
+          `;
+
+
+
+      /* RECOMMENDED RESOURCES */
+
+      const requiredResources =
+        [
+
+          ...new Set(
+
+            gapItems
+              .map(
+
+                item =>
+                  item.resource
+
+              )
+
+          )
+
+        ];
+
+
+
+      document
+        .getElementById(
+          "resultLinks"
+        )
+        .innerHTML =
+
+        requiredResources.length
+
+          ?
+
+          requiredResources
+            .map(
+
+              key => `
+
+                <a
+                  href="${LINKS[key]}"
+                  target="_blank"
+                  rel="noopener">
+
+                  ${resourceName(key)}
+                  ↗
+
+                </a>
+
+              `
+
+            )
+            .join("")
+
+          :
+
+          `
+
+            <a
+              href="${LINKS.checklist}"
+              target="_blank"
+              rel="noopener">
+
+              ตรวจ Checklist รอบสุดท้าย ↗
+
+            </a>
+
+          `;
+
+
+
+      saveAssessmentState();
+
+
+      setTimeout(() => {
+
+        document
+          .getElementById(
+            "assessment"
+          )
+          .scrollIntoView({
+
+            behavior:
+              "smooth",
+
+            block:
+              "start"
+
+          });
+
+      }, 100);
+
+
+    }
+
+
+
+    /* =========================================================
+       SHORT LABEL
+    ========================================================== */
+
+    function shortReadinessLabel(id) {
+
+
+      const labels = {
+
+
+        qualification:
+        "คุณสมบัติและระยะเวลาตามเกณฑ์",
+
+
+        teaching:
+        "ผลการสอนและเอกสารคำสอน",
+
+
+        workType:
+        "ประเภทและจำนวนผลงาน",
+
+
+        workQuality:
+        "คุณภาพและบทบาทในผลงาน",
+
+
+        ethics:
+        "จริยธรรมและการอ้างอิง",
+
+
+        publication:
+        "หลักเกณฑ์การเผยแพร่",
+
+
+        field:
+        "สาขาวิชา/อนุสาขา",
+
+
+        forms:
+        "แบบฟอร์มหลัก",
+
+
+        checklist:
+        "Checklist เอกสาร",
+
+
+        evidence:
+        "หลักฐานประกอบ",
+
+
+        latest:
+        "ประกาศและเกณฑ์ฉบับล่าสุด",
+
+
+        finalReview:
+        "การตรวจความครบถ้วนก่อนยื่น"
+
+
+      };
+
+
+      return (
+        labels[id]
+        ||
+        id
+      );
+
+
+    }
+
+
+
+    /* =========================================================
+       RESOURCE NAME
+    ========================================================== */
+
+    function resourceName(key) {
+
+
+      const names = {
+
+
+        regulations:
+        "กฎหมาย เกณฑ์ และประกาศ",
+
+
+        teaching:
+        "ผลการสอน / เอกสารคำสอน",
+
+
+        mainForms:
+        "แบบฟอร์มหลัก",
+
+
+        checklist:
+        "Checklist เอกสาร",
+
+
+        downloads:
+        "เอกสารดาวน์โหลด",
+
+
+        flowchart:
+        "Flowchart / อินโฟกราฟิก",
+
+
+        benefits:
+        "สิทธิประโยชน์"
+
+
+      };
+
+
+      return (
+        names[key]
+        ||
+        key
+      );
+
+
+    }
+
+
+
+    /* =========================================================
+       RESET ASSESSMENT
+    ========================================================== */
+
+    function resetAssessment() {
+
+
+      selectedPosition =
+        null;
+
+
+      currentQuestionGroup =
+        1;
+
+
+      readinessAnswers =
+        {};
+
+
+      localStorage
+        .removeItem(
+          "academicPromotionAssessment"
+        );
+
+
+
+      document
+        .querySelectorAll(
+          ".position-choice"
+        )
+        .forEach(
+
+          element => {
+
+            element.classList
+              .remove(
+                "selected"
+              );
+
+          }
+
+        );
+
+
+
+      document
+        .getElementById(
+          "resultStep"
+        )
+        .classList
+        .remove(
+          "show"
+        );
+
+
+      document
+        .getElementById(
+          "questionStep"
+        )
+        .style
+        .display =
+        "none";
+
+
+      document
+        .getElementById(
+          "positionStep"
+        )
+        .style
+        .display =
+        "block";
+
+
+      document
+        .getElementById(
+          "assessmentTitle"
+        )
+        .textContent =
+        "เริ่มประเมินความพร้อม";
+
+
+      document
+        .getElementById(
+          "assessmentSubtitle"
+        )
+        .textContent =
+        "เลือกตำแหน่งที่ต้องการยื่นก่อนเริ่มตอบคำถาม";
+
+
+      document
+        .getElementById(
+          "assessmentStep"
+        )
+        .textContent =
+        "ขั้นที่ 1/4";
+
+
+      goTo(
+        "assessment"
+      );
+
+
+    }
+
+
+
+    /* =========================================================
+       SAVE STATE
+    ========================================================== */
+
+    function saveAssessmentState() {
+
+
+      localStorage
+        .setItem(
+
+          "academicPromotionAssessment",
+
+          JSON.stringify({
+
+            position:
+              selectedPosition,
+
+            group:
+              currentQuestionGroup,
+
+            answers:
+              readinessAnswers
+
+          })
+
+        );
+
+
+    }
+
+
+
+    /* =========================================================
+       LOAD SAVED STATE
+    ========================================================== */
+
+    function loadSavedState() {
+
+
+      try {
+
+
+        const raw =
+          localStorage
+            .getItem(
+              "academicPromotionAssessment"
+            );
+
+
+        if(!raw) {
+
+          return;
+
+        }
+
+
+        const saved =
+          JSON.parse(raw);
+
+
+        if(
+          saved &&
+          saved.position
+        ) {
+
+
+          selectedPosition =
+            saved.position;
+
+
+          readinessAnswers =
+            saved.answers
+            || {};
+
+
+          const element =
+            document.querySelector(
+
+              `[data-position="${selectedPosition}"]`
+
+            );
+
+
+          if(element) {
+
+            element.classList
+              .add(
+                "selected"
+              );
+
+          }
+
+
+        }
+
+
+      }
+
+      catch(error) {
+
+
+        console.log(
+          "Cannot restore assessment state",
+          error
+        );
+
+
+      }
+
+
+    }
+
+
+
+    /* =========================================================
+       CONTENT MODAL
+    ========================================================== */
+
+    function openModule(id) {
+
+
+      const module =
+        MODULES[id];
+
+
+      document
+        .getElementById(
+          "modalLabel"
+        )
+        .textContent =
+        module.label;
+
+
+      document
+        .getElementById(
+          "modalTitle"
+        )
+        .textContent =
+        module.title;
+
+
+
+      document
+        .getElementById(
+          "modalBody"
+        )
+        .innerHTML = `
+
+          <p>
+            ${module.intro}
+          </p>
+
+          <div class="modal-list">
+
+            ${
+              module.items
+                .map(
+
+                  item =>
+                    `<div>✓ ${item}</div>`
+
+                )
+                .join("")
+            }
+
+          </div>
+
+        `;
+
+
+
+      document
+        .getElementById(
+          "modalActions"
+        )
+        .innerHTML =
+
+        module.resources
+          .map(
+
+            resource => `
+
+              <a
+                href="${resource[1]}"
+                target="_blank"
+                rel="noopener">
+
+                ${resource[0]} ↗
+
+              </a>
+
+            `
+
+          )
+          .join("");
+
+
+
+      document
+        .getElementById(
+          "contentModal"
+        )
+        .classList
+        .add(
+          "show"
+        );
+
+
+      document.body.style
+        .overflow =
+        "hidden";
+
+
+    }
+
+
+
+    function closeModule() {
+
+
+      document
+        .getElementById(
+          "contentModal"
+        )
+        .classList
+        .remove(
+          "show"
+        );
+
+
+      document.body.style
+        .overflow =
+        "";
+
+
+    }
+
+
+
+    function modalBackdrop(event) {
+
+
+      if(
+        event.target.id ===
+        "contentModal"
+      ) {
+
+        closeModule();
+
+      }
+
+
+    }
+
+
+
+    document.addEventListener(
+
+      "keydown",
+
+      event => {
+
+
+        if(
+          event.key ===
+          "Escape"
+        ) {
+
+          closeModule();
+
+        }
+
+
+      }
+
+    );
+
+
+
+    /* =========================================================
+       SCROLL PROGRESS
+    ========================================================== */
+
+    const progressFill =
+      document
+        .getElementById(
+          "progressFill"
+        );
+
+
+    function updateProgress() {
+
+
+      const documentElement =
+        document.documentElement;
+
+
+      const maximum =
+        documentElement.scrollHeight -
+        documentElement.clientHeight;
+
+
+      const percentage =
+        maximum > 0
+
+          ?
+
+          (
+            documentElement.scrollTop /
+            maximum *
+            100
+          )
+
+          :
+
+          0;
+
+
+      progressFill.style
+        .width =
+        percentage +
+        "%";
+
+
+    }
+
+
+    window.addEventListener(
+
+      "scroll",
+
+      updateProgress,
+
+      {
+        passive: true
+      }
+
+    );
+
+
+    updateProgress();
+
+
+
+    /* =========================================================
+       REVEAL
+    ========================================================== */
+
+    const revealObserver =
+      new IntersectionObserver(
+
+        entries => {
+
+
+          entries.forEach(
+
+            entry => {
+
+
+              if(
+                entry.isIntersecting
+              ) {
+
+                entry.target
+                  .classList
+                  .add(
+                    "visible"
+                  );
+
+              }
+
+
+            }
+
+          );
+
+
+        },
+
+        {
+          threshold: .10
+        }
+
+      );
+
+
+    document
+      .querySelectorAll(
+        ".reveal"
+      )
+      .forEach(
+
+        element => {
+
+          revealObserver
+            .observe(
+              element
+            );
+
+        }
+
+      );
+
+
+
+    /* =========================================================
+       ACTIVE BOTTOM NAV
+    ========================================================== */
+
+    const observedSections =
+      [
+        ...document
+          .querySelectorAll(
+            "main section[id]"
+          )
+      ];
+
+
+    const bottomButtons =
+      [
+        ...document
+          .querySelectorAll(
+            ".bottom-nav button"
+          )
+      ];
+
+
+    const activeObserver =
+      new IntersectionObserver(
+
+        entries => {
+
+
+          entries.forEach(
+
+            entry => {
+
+
+              if(
+                entry.isIntersecting
+              ) {
+
+
+                bottomButtons
+                  .forEach(
+
+                    button => {
+
+
+                      button.classList
+                        .toggle(
+
+                          "active",
+
+                          button.dataset.section ===
+                          entry.target.id
+
+                        );
+
+
+                    }
+
+                  );
+
+
+              }
+
+
+            }
+
+          );
+
+
+        },
+
+        {
+          rootMargin:
+            "-35% 0px -55% 0px"
+        }
+
+      );
+
+
+    observedSections
+      .forEach(
+
+        section => {
+
+          activeObserver
+            .observe(
+              section
+            );
+
+        }
+
+      );
+
+
+
+    /* =========================================================
+       INITIALIZE
+    ========================================================== */
+
+    loadSavedState();
+
+
+  </script>
+
+
+</body>
+
+</html>
